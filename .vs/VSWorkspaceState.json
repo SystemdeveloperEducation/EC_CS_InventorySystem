@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\InvSystem",
+    "\\InvSystem\\InvSystem",
+    "\\InvSystem\\InvSystem\\Pages",
+    "\\InvSystem\\InvSystem\\Shared"
   ],
+  "SelectedNode": "\\InvSystem\\InvSystem\\InvSystem.csproj",
   "PreviewInSolutionExplorer": false
 }
