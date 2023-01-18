@@ -19,7 +19,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Solmogen banan",
                     CountryOfOrigin = "Costa Rica",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/1093038/pexels-photo-1093038.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -30,7 +30,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Cantaloupe Melon",
                     CountryOfOrigin = "Australien, Waroona",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/4038763/pexels-photo-4038763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                 },
                 new Groceries
                 {
@@ -41,7 +41,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Kiwi from inner New Zealand",
                     CountryOfOrigin = "New Zealand",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/849685/pexels-photo-849685.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -52,7 +52,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Gul citrusfrukt",
                     CountryOfOrigin = "Mexico",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/1414122/pexels-photo-1414122.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -63,7 +63,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Sött Äpple",
                     CountryOfOrigin = "Chile",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/10568559/pexels-photo-10568559.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -74,7 +74,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Sött och gott päron",
                     CountryOfOrigin = "Frankrike",
-                    Img_url = "",
+                    Img_url = "https://dahab.se/media/catalog/product/cache/c33a865743098f24da0832a98845a0af/c/o/concorde-pear_variety-page_0.png",
                 },
                 new Groceries
                 {
@@ -85,7 +85,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Papaya",
                     CountryOfOrigin = "Papua New Guinea",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/5507722/pexels-photo-5507722.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -96,7 +96,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Ätmogen Kokosnöt",
                     CountryOfOrigin = "Zimbabwe",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/3986706/pexels-photo-3986706.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -107,7 +107,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Apelsin från Andalusien",
                     CountryOfOrigin = "Spanien",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/161559/background-bitter-breakfast-bright-161559.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -118,18 +118,18 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Clementin Marocko",
                     CountryOfOrigin = "Marocko",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/5500565/pexels-photo-5500565.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
-                    Title = "Banan",
-                    Price = 29.95,
-                    JmfrPris = 29.95,
-                    BrandName = "Chiquita",
+                    Title = "Banan EKO",
+                    Price = 34.95,
+                    JmfrPris = 34.95,
+                    BrandName = "Dole",
                     Category = "Frukt",
-                    Info = "Solmogen banan",
+                    Info = "Solmogen ekologisk banan",
                     CountryOfOrigin = "Costa Rica",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/2872755/pexels-photo-2872755.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -140,7 +140,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Söt och ljuvlig mango",
                     CountryOfOrigin = "USA",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -151,7 +151,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Svenska Jordgubbar",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/70746/strawberries-red-fruit-royalty-free-70746.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -162,7 +162,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Odlade blåbär från södra Sverige",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/70862/pexels-photo-70862.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -173,7 +173,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Solmogen persika",
                     CountryOfOrigin = "Colombia",
-                    Img_url = "",
+                    Img_url = "https://www.pexels.com/sv-se/foto/halsosam-frukt-fargrik-sot-1268122/",
                 },
                 new Groceries
                 {
@@ -184,7 +184,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "50 gram ungefärlig vikt",
                     CountryOfOrigin = "Colombia",
-                    Img_url = "",
+                    Img_url = "https://www.snabbfrukt.se/wp-content/uploads/2019/10/298.jpg",
                 },
                 new Groceries
                 {
@@ -195,7 +195,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Klass 1, 300 gram ungefärlig vikt",
                     CountryOfOrigin = "Spanien",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/6156975/pexels-photo-6156975.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -206,7 +206,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Sötsyrligt Äpple från Kalabrien",
                     CountryOfOrigin = "Italien",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/693794/pexels-photo-693794.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -217,7 +217,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Gröna Druvor 500g",
                     CountryOfOrigin = "Sydafrika",
-                    Img_url = "",
+                    Img_url = "https://cdn1.cdnme.se/4618866/8-3/vindruvor_grona_500g_mathem_59ccf1649606ee41ff5cc74e.jpg",
                 },
                 new Groceries
                 {
@@ -228,7 +228,7 @@ namespace Persistence
                     Category = "Frukt",
                     Info = "Röda druvor 500g",
                     CountryOfOrigin = "Sydafrika",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/7214926/pexels-photo-7214926.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -239,7 +239,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Gurka klass 1 ca 260 gram",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/gurka-klass1-4.jpg",
                 },
                 new Groceries
                 {
@@ -250,7 +250,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Tomat växthus",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                 new Groceries
                 {
@@ -261,7 +261,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Klass 1",
                     CountryOfOrigin = "Spanien",
-                    Img_url = "",
+                    Img_url = "https://upload.wikimedia.org/wikipedia/commons/6/69/Iceberg1.jpg",
                 },
                 new Groceries
                 {
@@ -272,7 +272,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Grön paprika klass 1",
                     CountryOfOrigin = "Spanien",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/2893635/pexels-photo-2893635.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                   new Groceries
                 {
@@ -283,7 +283,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Röd paprika klass 1",
                     CountryOfOrigin = "Spanien",
-                    Img_url = "",
+                    Img_url = "https://bilder.koketochgarden.se/Artikel/70237.png",
                 },
                   new Groceries
                 {
@@ -294,7 +294,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Gul paprika klass 1",
                     CountryOfOrigin = "Spanien",
-                    Img_url = "",
+                    Img_url = "http://files.builder.misssite.com/97/aa/97aaab70-82f7-4e25-8cce-5c8ac06b4952.jpeg",
                 },
                   new Groceries
                 {
@@ -305,7 +305,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Gul lök klass 1",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://outofhome.se/media/catalog/product/cache/30/image/17f82f742ffe127f42dca9de82fb58b1/g/u/gul-l_k.jpg",
                 },
                   new Groceries
                 {
@@ -316,7 +316,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Röd Lök klass 1",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://images-bonnier.imgix.net/files/ifo/production/20210428214701/roedloeg-kdDO1LDsCnHVDXxBDYJnpw.jpg?auto=compress,format&w=1024&fit=fill&crop=focalpoint&ar=1:2%201024w",
                 },
                   new Groceries
                 {
@@ -327,7 +327,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Vitlök i lösvikt",
                     CountryOfOrigin = "Kina",
-                    Img_url = "",
+                    Img_url = "https://smakasverige.se/images/18.2423abf3149a28cf45348046/1415799796288/Vitlok.jpg",
                 },
                   new Groceries
                 {
@@ -338,7 +338,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Purjolök klass 1",
                     CountryOfOrigin = "Nederländerna",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/purjolok-klass1-2.jpg",
                 },
                   new Groceries
                 {
@@ -349,7 +349,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Fast potatis klass 1",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://images.pexels.com/photos/2286776/pexels-photo-2286776.jpeg?auto=compress&cs=tinysrgb&w=1600",
                 },
                   new Groceries
                 {
@@ -360,7 +360,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Mjölig potatis klass 1",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "http://sasongensbasta.se/wp-content/uploads/imagecache/a1/a1cdde11f04c81c8fa6e719f34063f24.jpg?i=eNpFzTESwiAQQNG7bI9ABCZuOu9g7WBAQBNggEwKxwt4Ng9lUln%2B13yNEl8Ve4Qwa2cvZYKh4mlr6tNsadU1RWcjzcttCuPVt3miayZjis3GRpc8JW0q7RjvKVP0GaIj1qy6GHIv%2BvuJpGNMEU4sl0Jwduy4VL04PLLbTxJhDaZ5GAIqxjZRCN4G59ufBMJYUt5hT84QtDHnVIwtFYbbpu8f0jw%2FOw%3D%3D&t=0621f58ff33e921d5b92090c2d3c99ac",
                 },
                   new Groceries
                 {
@@ -371,7 +371,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Ingefära klass 1",
                     CountryOfOrigin = "Kina",
-                    Img_url = "",
+                    Img_url = "https://pongmarket.se/image/1764/PMFG0007.jpg",
                 },
                   new Groceries
                 {
@@ -382,7 +382,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Vitkål klass 1",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://media.istockphoto.com/id/1168999569/sv/foto/chef-f%C3%B6r-f%C3%A4rsk-vitk%C3%A5l-cutout-p%C3%A5-vit.jpg?s=612x612&w=0&k=20&c=U4hDS7AJGoa5gVdrYBBruEsM4nSj9VP4YxMdQvWHslw=",
                 },
                   new Groceries
                 {
@@ -393,7 +393,7 @@ namespace Persistence
                     Category = "Grönsaker",
                     Info = "Babyspenat i påse klass 1. Vikt 80 gram",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://media.martinservera.se/fl_lossy,f_auto,w_525,h_525,c_pad,b_white/prod/martinservera/produkt/3/050/590/DV02_242214_01.png",
                 },
                  new Groceries
                 {
@@ -404,7 +404,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Mellanmjölk från svenska kor. 1.5 liter",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/mellanmjolk-farsk-1-5--1l-arla.jpg",
                 },
                   new Groceries
                 {
@@ -415,7 +415,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Standardmjölk från svenska kor. 1.5 liter",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://cdn.natmat.se/content/shopimages/large/32199-165789.jpg",
                 },
                   new Groceries
                 {
@@ -426,7 +426,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Lättmjölk från svenska kor. 1.5 liter",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://d2rfo6yapuixuu.cloudfront.net/h17/hac/13572700635166/7310865001115_1667378431648_master_axfood_400",
                 },
                   new Groceries
                 {
@@ -437,7 +437,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Vispgrädde från svenska kor. 500 ml",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://cdn-kund.arla.se/remote/api.opv.se/WS/Arla/HierarchyService/v122/thumbnails/px500/vbjc4a75cijy3yv5nkycwyu6zq000000.Png",
                 },
                   new Groceries
                 {
@@ -448,7 +448,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Creme Fraiche från svenska kor. 500 ml",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/07310865003775_c1c1.jpg",
                 },
                   new Groceries
                 {
@@ -459,7 +459,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Normalsaltad matfettsblandning från svenska kor. 500 g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://thumb.mp-farm.com/66255202/preview.jpg",
                 },
                 new Groceries
                 {
@@ -470,7 +470,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Extrasaltad matfettsblandning från svenska kor. 500 g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://images.opv.se/v120/thumbnails/px400/4433o44vkzz3zygjyeak3gqtca000000.Png",
                 },
                 new Groceries
                 {
@@ -481,7 +481,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Mellan matfettsblandning från svenska kor. 500 g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://images.opv.se/v120/thumbnails/px400/3y7qdim2gticbzrzyqmuurswoa000000.Png",
                 },
                 new Groceries
                 {
@@ -492,7 +492,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Apelsin Juice 2 liter",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://bravo.nu/wp-content/uploads/2022/06/2l_bravo_apelsin_v-454x1024.jpg",
                 },
                 new Groceries
                 {
@@ -503,7 +503,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Äpple Juice 2 liter",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://res.cloudinary.com/coopsverige/images/e_sharpen,f_auto,fl_clip,fl_progressive,q_90,c_lpad,g_center,h_330,w_330/v1664274829/cloud/259225/Juice%20%C3%84pple.jpg",
                 },
                 new Groceries
                 {
@@ -514,7 +514,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Ägg klass 1 Sverige Mellan",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://d1ax460061ulao.cloudfront.net/500x500/9/1/917f7976e5476a2a7b2f30843f17c67a.jpg",
                 },
                 new Groceries
                 {
@@ -525,7 +525,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Ägg klass 1 Sverige Mellan",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.kronagg.se/images/2920/07310067443416_c1c1.jpg?width=1200&height=630&bgcolor=fff",
                 },
                 new Groceries
                 {
@@ -536,7 +536,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Ägg klass 1 Sverige Mellan",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/07310060004348_c1l1.jpeg.jpg",
                 },
                 new Groceries
                 {
@@ -547,7 +547,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Yoghurt Vanilj 1000 gram",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.mardskog.se/images/thumbs/0002858_yoggi-vanilj-madagaskar-6x1l.jpeg",
                 },
                   new Groceries
                 {
@@ -558,7 +558,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Yoghurt Skogsbär 1000 gram",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/07310865018472_c1l1.jpg",
                 },
                   new Groceries
                 {
@@ -569,7 +569,7 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Yoghurt Samoa 1000 gram",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://media.martinservera.se/fl_lossy,f_auto,w_525,h_525,c_pad,b_white/prod/martinservera/produkt/3/051/763/DV02_430330_01.png",
                 },
                   new Groceries
                 {
@@ -580,18 +580,18 @@ namespace Persistence
                     Category = "Mejeri",
                     Info = "Yoghurt Mini Jordgubb 1000 gram",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/yoggi-mini-yoghurt-jordgubb-1l-arla.jpg",
                 },
                   new Groceries
                 {
                     Title = "Falukorv Ring",
-                    Price = 33.95,
-                    JmfrPris = 33.95,
+                    Price = 46.95,
+                    JmfrPris = 38.95,
                     BrandName = "Scan",
                     Category = "Kött & Chark",
-                    Info = "1000g",
+                    Info = "1500g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://cdn.natmat.se/content/shopimages/large/37472-57365.jpg",
                 },
                 new Groceries
                 {
@@ -600,20 +600,20 @@ namespace Persistence
                     JmfrPris = 99.95,
                     BrandName = "Scan",
                     Category = "Kött & Chark",
-                    Info = "150 x 3",
+                    Info = "140 gram x 3",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://cdn.natmat.se/content/shopimages/large/37484-54145.jpg",
                 },
                 new Groceries
                 {
                     Title = "Kokt skinka",
                     Price = 22.95,
                     JmfrPris = 229.90,
-                    BrandName = "Scan",
+                    BrandName = "Pärsons",
                     Category = "Kött & Chark",
                     Info = "Pålägg 100g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://assets.icanet.se/t_product_large_v1,f_auto/7330797077132.jpg",
                 },
                 new Groceries
                 {
@@ -624,7 +624,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "Pålägg 100g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://d2vvd32x83pgg5.cloudfront.net/hc1/h47/8974959280158/7330797077149_master_1648466440090_axfood_333",
                 },
                 new Groceries
                 {
@@ -635,7 +635,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "Pålägg 100g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/07330797077118_2.jpg",
                 },
                 new Groceries
                 {
@@ -646,7 +646,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "Pålägg 100g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://cdn.natmat.se/content/shopimages/large/162997-7330797770514.jpg",
                 },
                 new Groceries
                 {
@@ -657,29 +657,29 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://cdn.natmat.se/content/shopimages/large/113341-blandfars-ca-1000g-scan.jpg",
                 },
                 new Groceries
                 {
-                    Title = "Nötfärs 20%",
+                    Title = "Nötfärs 10%",
                     Price = 114.95,
                     JmfrPris = 114.95,
                     BrandName = "Scan",
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/notfars-10--ca-1000g-scan.jpg",
                 },
                 new Groceries
                 {
                     Title = "Fläskfärs",
                     Price = 87.95,
                     JmfrPris = 87.95,
-                    BrandName = "Scan",
+                    BrandName = "Garant",
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://d1ax460061ulao.cloudfront.net/1000x1000/5/9/59f384ee61950dfcbf8594ac2b6c6b27.jpg",
                 },
                 new Groceries
                 {
@@ -690,7 +690,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.recepten.se/bilder/info/345/main/l/benfri_karree.jpg",
                 },
                 new Groceries
                 {
@@ -701,7 +701,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://dabas.blob.core.windows.net/media/martin-servera/168211_01.jpg",
                 },
                 new Groceries
                 {
@@ -712,18 +712,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
-                },
-                new Groceries
-                {
-                    Title = "Karré Benfri",
-                    Price = 89.95,
-                    JmfrPris = 89.95,
-                    BrandName = "Scan",
-                    Category = "Kött & Chark",
-                    Info = "ca 1000g",
-                    CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://svensktkott.se/wp-content/uploads/2019/11/n-fransyska.jpg",
                 },
                 new Groceries
                 {
@@ -734,7 +723,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQn6O6W2g3idbH0Imn8JtrKCb6Or-OV8ftg&usqp=CAU",
                 },
                 new Groceries
                 {
@@ -745,7 +734,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.recepten.se/bilder/info/5/main/l/kyckling.jpg",
                 },
                 new Groceries
                 {
@@ -756,7 +745,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.menigo.se/globalassets/inriver/resources/407244_1.jpg?h=960&mode=max&quality=75&ref=157792&w=960",
                 },
                 new Groceries
                 {
@@ -767,7 +756,7 @@ namespace Persistence
                     Category = "Kött & Chark",
                     Info = "ca 1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://cdn.kronfagel.se/app/uploads/2019/09/7849_7849_Klycklingklubba.png",
                 },
                 new Groceries
                 {
@@ -778,7 +767,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "500g",
                     CountryOfOrigin = "Italien",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/08076802085981_d1c1.jpg",
                 },
                 new Groceries
                 {
@@ -789,7 +778,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "500g",
                     CountryOfOrigin = "Italien",
-                    Img_url = "",
+                    Img_url = "https://images.deliveryhero.io/image/product-information-management/624d793bc7f8495d9a0920cd.png?height=400",
                 },
                 new Groceries
                 {
@@ -800,7 +789,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "500g",
                     CountryOfOrigin = "Italien",
-                    Img_url = "",
+                    Img_url = "https://res.cloudinary.com/coopsverige/images/e_sharpen,f_auto,fl_clip,fl_progressive,q_90,c_lpad,g_center,h_330,w_330/v1656410915/cloud/254621/Pasta%20Farfalle.jpg",
                 },
                 new Groceries
                 {
@@ -811,7 +800,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "500g",
                     CountryOfOrigin = "Italien",
-                    Img_url = "",
+                    Img_url = "https://www.miaspesa.it/image/resize-big?img=https%3A%2F%2Fd21mug5vzt7ic2.cloudfront.net%2Fcarrefour%2F52010%2Fresize%2F52010_1.jpg",
                 },
                 new Groceries
                 {
@@ -822,7 +811,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "500g",
                     CountryOfOrigin = "Italien",
-                    Img_url = "",
+                    Img_url = "https://mutti-parma.com/app/uploads/sites/14/2019/10/polpa-400g-hires-nordic-768x1165.png",
                 },
                 new Groceries
                 {
@@ -833,18 +822,18 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "320g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.santamariaworld.com/globalassets/_products/tex-mex/102059.png",
                 },
                 new Groceries
                 {
                     Title = "Havregryn",
                     Price = 14.95,
-                    JmfrPris = 14.95,
+                    JmfrPris = 22.42,
                     BrandName = "AXA",
                     Category = "Kolonial",
-                    Info = "1000g",
+                    Info = "1500g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://media.delitea.se/product-images/XL/axa-havregryn-1.5kg-1.jpg",
                 },
                 new Groceries
                 {
@@ -855,7 +844,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "1000g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://static.mathem.se/shared/images/products/large/07310130006043_c1n1.jpg",
                 },
                 new Groceries
                 {
@@ -866,7 +855,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "1000g",
                     CountryOfOrigin = "Danmark",
-                    Img_url = "",
+                    Img_url = "https://www.dansukker.se/Admin/Public/GetImage.ashx?image=%2FFiles%2Fproduct-cataloge%2Fproduct_large%2Fstrosocker-1kg.png&width=640&format=webp",
                 },
                 new Groceries
                 {
@@ -877,7 +866,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "275g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.estrella.se/content/uploads/2020/04/thumbnails/estrella-sourcream-onion-chips-275g-175g-40g-83012-500x800.png",
                 },
                 new Groceries
                 {
@@ -888,18 +877,18 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "275g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://media.delitea.se/product-images/XL/est-grillchips-40g-0.jpg",
                 },
                 new Groceries
                 {
-                    Title = "Chips Sourcream & Onion",
+                    Title = "Chips Dill",
                     Price = 22.95,
                     JmfrPris = 102.95,
                     BrandName = "Estrella",
                     Category = "Kolonial",
                     Info = "275g",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.estrella.se/content/uploads/2020/04/estrella-dillchips-275g-175g-688x1024.png",
                 },
                 new Groceries
                 {
@@ -910,7 +899,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "4 st",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.officedepot.se/-/media/commerce/sweden/original/85/58/8558063.jpg?bc=white&h=700&w=700&hash=10CC5DBD97687887DEB90A58E6366CB227B5911E",
                 },
                 new Groceries
                 {
@@ -921,7 +910,7 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "8 st",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://res.cloudinary.com/coopsverige/images/e_sharpen,f_auto,fl_clip,fl_progressive,q_90,c_lpad,g_center,h_330,w_330/v1612136410/419317/Toalettpapper%20Classic%208-pack.jpg",
                 },
                 new Groceries
                 {
@@ -932,18 +921,18 @@ namespace Persistence
                     Category = "Kolonial",
                     Info = "Duschgel man",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://www.tvattgiganten.se/wp-content/uploads/2016/11/AXE-Dark-Temptation.png",
                 },
                 new Groceries
                 {
-                    Title = "Duschgel Axe Dark Temptation",
+                    Title = "Duschgel Axe Black",
                     Price = 32.50,
                     JmfrPris = 130.00,
                     BrandName = "Axe",
                     Category = "Kolonial",
                     Info = "Duschgel man",
                     CountryOfOrigin = "Sverige",
-                    Img_url = "",
+                    Img_url = "https://c-of.niceshops.com/upload/image/product/large/default/axe-duschgel-black-250-ml-272404-sv.jpg",
                 },
 
             };
