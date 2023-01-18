@@ -1,0 +1,38 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET
+env:
+  TEST_PROJECT_PATH: ./vecka02/task06_CS_testprojekt/CS_testprojekt.csproj
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build_my_DotNet_And_Test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup My .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies wohoo
+      run: dotnet restore $TEST_PROJECT_PATH
+    - name: Build my stuff
+      run: dotnet build --no-restore $TEST_PROJECT_PATH 
+    - name: Test my shit
+      run: dotnet test --no-build --verbosity normal --logger trx --results-directory TestResults $TEST_PROJECT_PATH; ls -la
+    - name: Upload dotnet test results to heaven
+      uses: actions/upload-artifact@v3
+      with:
+        name: dotnet-results-${{ matrix.dotnet-version }}
+        path: TestResults
+          # Use always() to always run this step to publish test results when there are test failures
+      if: ${{ always() }}
+    
