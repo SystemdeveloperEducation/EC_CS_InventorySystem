@@ -1,0 +1,955 @@
+using Domain;
+
+namespace Persistence
+{
+    public class Seed
+    {
+        public static async Task SeedData(DataContext context)
+        {
+            if (context.Groceries.Any()) return;
+
+            var activities = new List<Groceries>
+            {
+                new Groceries
+                {
+                    Title = "Banan",
+                    Price = 29.95,
+                    JmfrPris = 29.95,
+                    BrandName = "Chiquita",
+                    Category = "Frukt",
+                    Info = "Solmogen banan",
+                    CountryOfOrigin = "Costa Rica",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Cantaloupe Melon",
+                    Price = 32.95,
+                    JmfrPris = 32.95,
+                    BrandName = "Cantaloupe.Melons",
+                    Category = "Frukt",
+                    Info = "Cantaloupe Melon",
+                    CountryOfOrigin = "Australien, Waroona",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Kiwi",
+                    Price = 9.95,
+                    JmfrPris = 67.95,
+                    BrandName = "New Zealand Kiwi Foundation",
+                    Category = "Frukt",
+                    Info = "Kiwi from inner New Zealand",
+                    CountryOfOrigin = "New Zealand",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Citron",
+                    Price = 7.95,
+                    JmfrPris = 49.95,
+                    BrandName = "El gringo limón.mx",
+                    Category = "Frukt",
+                    Info = "Gul citrusfrukt",
+                    CountryOfOrigin = "Mexico",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Äpple Royal Gala",
+                    Price = 25.95,
+                    JmfrPris = 25.95,
+                    BrandName = "Chile Apples.org",
+                    Category = "Frukt",
+                    Info = "Sött Äpple",
+                    CountryOfOrigin = "Chile",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Päron Conference",
+                    Price = 27.95,
+                    JmfrPris = 27.95,
+                    BrandName = "AllPears",
+                    Category = "Frukt",
+                    Info = "Sött och gott päron",
+                    CountryOfOrigin = "Frankrike",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Papaya",
+                    Price = 32.95,
+                    JmfrPris = 32.95,
+                    BrandName = "Papua New Guinea Fruits",
+                    Category = "Frukt",
+                    Info = "Papaya",
+                    CountryOfOrigin = "Papua New Guinea",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Kokosnöt",
+                    Price = 15.95,
+                    JmfrPris = 15.95,
+                    BrandName = "African Nuts",
+                    Category = "Frukt",
+                    Info = "Ätmogen Kokosnöt",
+                    CountryOfOrigin = "Zimbabwe",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Apelsin",
+                    Price = 31.95,
+                    JmfrPris = 31.95,
+                    BrandName = "Naranja.ES",
+                    Category = "Frukt",
+                    Info = "Apelsin från Andalusien",
+                    CountryOfOrigin = "Spanien",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Clementin",
+                    Price = 21.95,
+                    JmfrPris = 21.95,
+                    BrandName = "Maroc",
+                    Category = "Frukt",
+                    Info = "Clementin Marocko",
+                    CountryOfOrigin = "Marocko",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Banan",
+                    Price = 29.95,
+                    JmfrPris = 29.95,
+                    BrandName = "Chiquita",
+                    Category = "Frukt",
+                    Info = "Solmogen banan",
+                    CountryOfOrigin = "Costa Rica",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Mango",
+                    Price = 19.95,
+                    JmfrPris = 99.95,
+                    BrandName = "US.Mangoes",
+                    Category = "Frukt",
+                    Info = "Söt och ljuvlig mango",
+                    CountryOfOrigin = "USA",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Jordgubbar",
+                    Price = 29.95,
+                    JmfrPris = 29.95,
+                    BrandName = "Bärgubben",
+                    Category = "Frukt",
+                    Info = "Svenska Jordgubbar",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Blåbär i ask",
+                    Price = 29.95,
+                    JmfrPris = 121.95,
+                    BrandName = "Sv.bär",
+                    Category = "Frukt",
+                    Info = "Odlade blåbär från södra Sverige",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Persika",
+                    Price = 32.50,
+                    JmfrPris = 32.50,
+                    BrandName = "Colombian fruits",
+                    Category = "Frukt",
+                    Info = "Solmogen persika",
+                    CountryOfOrigin = "Colombia",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Passionsfrukt",
+                    Price = 6.95,
+                    JmfrPris = 139.95,
+                    BrandName = "Pasión de Colombia",
+                    Category = "Frukt",
+                    Info = "50 gram ungefärlig vikt",
+                    CountryOfOrigin = "Colombia",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Grapefrukt",
+                    Price = 12.95,
+                    JmfrPris = 51.95,
+                    BrandName = "naranjases",
+                    Category = "Frukt",
+                    Info = "Klass 1, 300 gram ungefärlig vikt",
+                    CountryOfOrigin = "Spanien",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Äpple Granny Smith",
+                    Price = 32.95,
+                    JmfrPris = 32.95,
+                    BrandName = "Italian fruits",
+                    Category = "Frukt",
+                    Info = "Sötsyrligt Äpple från Kalabrien",
+                    CountryOfOrigin = "Italien",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Gröna Druvor",
+                    Price = 39.95,
+                    JmfrPris = 78.95,
+                    BrandName = "South African grapes",
+                    Category = "Frukt",
+                    Info = "Gröna Druvor 500g",
+                    CountryOfOrigin = "Sydafrika",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Röda Druvor",
+                    Price = 44.95,
+                    JmfrPris = 89.80,
+                    BrandName = "South African grapes",
+                    Category = "Frukt",
+                    Info = "Röda druvor 500g",
+                    CountryOfOrigin = "Sydafrika",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Gurka",
+                    Price = 15.95,
+                    JmfrPris = 74.95,
+                    BrandName = "Svenska bönder",
+                    Category = "Grönsaker",
+                    Info = "Gurka klass 1 ca 260 gram",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Tomat",
+                    Price = 45.95,
+                    JmfrPris = 45.95,
+                    BrandName = "Svenska bönder",
+                    Category = "Grönsaker",
+                    Info = "Tomat växthus",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Isbergssallad",
+                    Price = 39.95,
+                    JmfrPris = 39.95,
+                    BrandName = "Svenska bönder",
+                    Category = "Grönsaker",
+                    Info = "Klass 1",
+                    CountryOfOrigin = "Spanien",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Grön Paprika",
+                    Price = 69.95,
+                    JmfrPris = 69.95,
+                    BrandName = "Dr.Paprika",
+                    Category = "Grönsaker",
+                    Info = "Grön paprika klass 1",
+                    CountryOfOrigin = "Spanien",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Röd Paprika",
+                    Price = 69.95,
+                    JmfrPris = 69.95,
+                    BrandName = "Dr.Paprika",
+                    Category = "Grönsaker",
+                    Info = "Röd paprika klass 1",
+                    CountryOfOrigin = "Spanien",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Gul Paprika",
+                    Price = 69.95,
+                    JmfrPris = 69.95,
+                    BrandName = "Dr.Paprika",
+                    Category = "Grönsaker",
+                    Info = "Gul paprika klass 1",
+                    CountryOfOrigin = "Spanien",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Gul Lök",
+                    Price = 6.95,
+                    JmfrPris = 6.95,
+                    BrandName = "Svenska bönder",
+                    Category = "Grönsaker",
+                    Info = "Gul lök klass 1",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Röd Lök",
+                    Price = 19.95,
+                    JmfrPris = 19.95,
+                    BrandName = "Svenska Bönder",
+                    Category = "Grönsaker",
+                    Info = "Röd Lök klass 1",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Vitlök",
+                    Price = 69.95,
+                    JmfrPris = 69.95,
+                    BrandName = "Chi tha",
+                    Category = "Grönsaker",
+                    Info = "Vitlök i lösvikt",
+                    CountryOfOrigin = "Kina",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Purjolök",
+                    Price = 39.95,
+                    JmfrPris = 39.95,
+                    BrandName = "Netherlands veeijxthuis",
+                    Category = "Grönsaker",
+                    Info = "Purjolök klass 1",
+                    CountryOfOrigin = "Nederländerna",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Potatis Fast",
+                    Price = 13.95,
+                    JmfrPris = 13.95,
+                    BrandName = "LPM Potatis Laholm",
+                    Category = "Grönsaker",
+                    Info = "Fast potatis klass 1",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Mjölig Potatis",
+                    Price = 11.95,
+                    JmfrPris = 11.95,
+                    BrandName = "LPM Potatis Laholm",
+                    Category = "Grönsaker",
+                    Info = "Mjölig potatis klass 1",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Ingefära",
+                    Price = 79.95,
+                    JmfrPris = 79.95,
+                    BrandName = "Chi Hong Trading",
+                    Category = "Grönsaker",
+                    Info = "Ingefära klass 1",
+                    CountryOfOrigin = "Kina",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Vitkål",
+                    Price = 19.95,
+                    JmfrPris = 19.95,
+                    BrandName = "Svenska Bönder",
+                    Category = "Grönsaker",
+                    Info = "Vitkål klass 1",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Babyspenat Eko",
+                    Price = 19.95,
+                    JmfrPris = 285.00,
+                    BrandName = "Svenska Bönder",
+                    Category = "Grönsaker",
+                    Info = "Babyspenat i påse klass 1. Vikt 80 gram",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                 new Groceries
+                {
+                    Title = "Mjölk",
+                    Price = 21.95,
+                    JmfrPris = 14.63,
+                    BrandName = "Arla",
+                    Category = "Mejeri",
+                    Info = "Mellanmjölk från svenska kor. 1.5 liter",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Mjölk",
+                    Price = 21.95,
+                    JmfrPris = 14.63,
+                    BrandName = "Arla",
+                    Category = "Mejeri",
+                    Info = "Standardmjölk från svenska kor. 1.5 liter",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Mjölk",
+                    Price = 21.95,
+                    JmfrPris = 14.63,
+                    BrandName = "Arla",
+                    Category = "Mejeri",
+                    Info = "Lättmjölk från svenska kor. 1.5 liter",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Vispgrädde 40%",
+                    Price = 28.95,
+                    JmfrPris = 58.95,
+                    BrandName = "Arla",
+                    Category = "Mejeri",
+                    Info = "Vispgrädde från svenska kor. 500 ml",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Creme Fraiche 500 gram",
+                    Price = 32.95,
+                    JmfrPris = 87.50,
+                    BrandName = "Arla",
+                    Category = "Mejeri",
+                    Info = "Creme Fraiche från svenska kor. 500 ml",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Bregott Normalsaltat",
+                    Price = 62.95,
+                    JmfrPris = 125.90,
+                    BrandName = "Arla",
+                    Category = "Mejeri",
+                    Info = "Normalsaltad matfettsblandning från svenska kor. 500 g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Bregott Extrasaltat",
+                    Price = 62.95,
+                    JmfrPris = 125.90,
+                    BrandName = "Arla",
+                    Category = "Mejeri",
+                    Info = "Extrasaltad matfettsblandning från svenska kor. 500 g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Bregott Mellan",
+                    Price = 62.95,
+                    JmfrPris = 125.90,
+                    BrandName = "Arla",
+                    Category = "Mejeri",
+                    Info = "Mellan matfettsblandning från svenska kor. 500 g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Apelsin Juice 2 liter",
+                    Price = 32.95,
+                    JmfrPris = 16.47,
+                    BrandName = "Bravo",
+                    Category = "Mejeri",
+                    Info = "Apelsin Juice 2 liter",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Äpple Juice 2 liter",
+                    Price = 32.95,
+                    JmfrPris = 16.47,
+                    BrandName = "Bravo",
+                    Category = "Mejeri",
+                    Info = "Äpple Juice 2 liter",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Ägg 20-Pack",
+                    Price = 62.95,
+                    JmfrPris = 3.14,
+                    BrandName = "Kronägg",
+                    Category = "Mejeri",
+                    Info = "Ägg klass 1 Sverige Mellan",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Ägg 10-Pack",
+                    Price = 33.95,
+                    JmfrPris = 3.39,
+                    BrandName = "Kronägg",
+                    Category = "Mejeri",
+                    Info = "Ägg klass 1 Sverige Mellan",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Ägg 6-Pack",
+                    Price = 24.95,
+                    JmfrPris = 4.15,
+                    BrandName = "Kronägg",
+                    Category = "Mejeri",
+                    Info = "Ägg klass 1 Sverige Mellan",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Yoggi Vanilj",
+                    Price = 27.95,
+                    JmfrPris = 27.95,
+                    BrandName = "Yoggi",
+                    Category = "Mejeri",
+                    Info = "Yoghurt Vanilj 1000 gram",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Yoggi Skogsbär",
+                    Price = 27.95,
+                    JmfrPris = 27.95,
+                    BrandName = "Yoggi",
+                    Category = "Mejeri",
+                    Info = "Yoghurt Skogsbär 1000 gram",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Yoggi Samoa",
+                    Price = 27.95,
+                    JmfrPris = 27.95,
+                    BrandName = "Yoggi",
+                    Category = "Mejeri",
+                    Info = "Yoghurt Samoa 1000 gram",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Yoggi Mini Jordgubb",
+                    Price = 27.95,
+                    JmfrPris = 27.95,
+                    BrandName = "Yoggi",
+                    Category = "Mejeri",
+                    Info = "Yoghurt Mini Jordgubb 1000 gram",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                  new Groceries
+                {
+                    Title = "Falukorv Ring",
+                    Price = 33.95,
+                    JmfrPris = 33.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Bacon 3-pack",
+                    Price = 39.95,
+                    JmfrPris = 99.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "150 x 3",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Kokt skinka",
+                    Price = 22.95,
+                    JmfrPris = 229.90,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "Pålägg 100g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Rökt skinka",
+                    Price = 22.95,
+                    JmfrPris = 229.90,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "Pålägg 100g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Rökt Kalkon",
+                    Price = 22.95,
+                    JmfrPris = 229.90,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "Pålägg 100g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Cognacsmedwurst",
+                    Price = 22.95,
+                    JmfrPris = 229.90,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "Pålägg 100g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Blandfärs",
+                    Price = 94.95,
+                    JmfrPris = 94.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Nötfärs 20%",
+                    Price = 114.95,
+                    JmfrPris = 114.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Fläskfärs",
+                    Price = 87.95,
+                    JmfrPris = 87.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Karré Benfri",
+                    Price = 89.95,
+                    JmfrPris = 89.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Ryggbiff med kappa",
+                    Price = 239.95,
+                    JmfrPris = 239.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Fransyska av Nöt",
+                    Price = 89.95,
+                    JmfrPris = 89.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Karré Benfri",
+                    Price = 89.95,
+                    JmfrPris = 89.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Fläskfilé Sverige",
+                    Price = 189.95,
+                    JmfrPris = 189.95,
+                    BrandName = "Scan",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Kycklingbröstfilé",
+                    Price = 189.95,
+                    JmfrPris = 189.95,
+                    BrandName = "Kronfågel",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Kycklinglårfilé",
+                    Price = 229.95,
+                    JmfrPris = 229.95,
+                    BrandName = "Kronfågel",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Kycklingklubba",
+                    Price = 75.95,
+                    JmfrPris = 75.95,
+                    BrandName = "Kronfågel",
+                    Category = "Kött & Chark",
+                    Info = "ca 1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Pasta Fusili",
+                    Price = 14.95,
+                    JmfrPris = 29.80,
+                    BrandName = "Barilla",
+                    Category = "Kolonial",
+                    Info = "500g",
+                    CountryOfOrigin = "Italien",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Pasta Penne",
+                    Price = 14.95,
+                    JmfrPris = 29.80,
+                    BrandName = "Barilla",
+                    Category = "Kolonial",
+                    Info = "500g",
+                    CountryOfOrigin = "Italien",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Pasta Farfalle",
+                    Price = 14.95,
+                    JmfrPris = 29.80,
+                    BrandName = "Barilla",
+                    Category = "Kolonial",
+                    Info = "500g",
+                    CountryOfOrigin = "Italien",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Pasta Ruote",
+                    Price = 14.95,
+                    JmfrPris = 29.80,
+                    BrandName = "Barilla",
+                    Category = "Kolonial",
+                    Info = "500g",
+                    CountryOfOrigin = "Italien",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Krossade Tomater",
+                    Price = 14.95,
+                    JmfrPris = 29.80,
+                    BrandName = "Mutti",
+                    Category = "Kolonial",
+                    Info = "500g",
+                    CountryOfOrigin = "Italien",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Tortilla Medium 8-pack",
+                    Price = 18.95,
+                    JmfrPris = 59.22,
+                    BrandName = "Santa Maria",
+                    Category = "Kolonial",
+                    Info = "320g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Havregryn",
+                    Price = 14.95,
+                    JmfrPris = 14.95,
+                    BrandName = "AXA",
+                    Category = "Kolonial",
+                    Info = "1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Vetemjöl",
+                    Price = 18.95,
+                    JmfrPris = 18.95,
+                    BrandName = "Kungsörnen",
+                    Category = "Kolonial",
+                    Info = "1000g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Strösocker",
+                    Price = 21.95,
+                    JmfrPris = 21.95,
+                    BrandName = "Dan Sukker",
+                    Category = "Kolonial",
+                    Info = "1000g",
+                    CountryOfOrigin = "Danmark",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Chips Sourcream & Onion",
+                    Price = 22.95,
+                    JmfrPris = 102.95,
+                    BrandName = "Estrella",
+                    Category = "Kolonial",
+                    Info = "275g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Chips Grill",
+                    Price = 22.95,
+                    JmfrPris = 102.95,
+                    BrandName = "Estrella",
+                    Category = "Kolonial",
+                    Info = "275g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Chips Sourcream & Onion",
+                    Price = 22.95,
+                    JmfrPris = 102.95,
+                    BrandName = "Estrella",
+                    Category = "Kolonial",
+                    Info = "275g",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Hushållspapper 4-pack",
+                    Price = 39.95,
+                    JmfrPris = 68.57,
+                    BrandName = "Lambi",
+                    Category = "Kolonial",
+                    Info = "4 st",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Toalettpapper 8-pack",
+                    Price = 39.95,
+                    JmfrPris = 68.57,
+                    BrandName = "Lambi",
+                    Category = "Kolonial",
+                    Info = "8 st",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Duschgel Axe Dark Temptation",
+                    Price = 32.50,
+                    JmfrPris = 130.00,
+                    BrandName = "Axe",
+                    Category = "Kolonial",
+                    Info = "Duschgel man",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+                new Groceries
+                {
+                    Title = "Duschgel Axe Dark Temptation",
+                    Price = 32.50,
+                    JmfrPris = 130.00,
+                    BrandName = "Axe",
+                    Category = "Kolonial",
+                    Info = "Duschgel man",
+                    CountryOfOrigin = "Sverige",
+                    Img_url = "",
+                },
+
+            };
+
+            await context.Groceries.AddRangeAsync(activities);
+            await context.SaveChangesAsync();
+        }
+    }
+}
