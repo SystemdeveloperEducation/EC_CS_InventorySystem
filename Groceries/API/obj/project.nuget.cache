@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jtKIfUMdxESBTw79kSSouAahf6Wtc0lCuaWexSjJagc29XPktrS3Gg6SuUcoPUvr+GWjG523iwVQ0YqnX+69OQ==",
+  "dgSpecHash": "uGFf0b9zFjKfG24DIb6/C1psY1XYKnaa79I39Sxia6qzlWvyGyOQvWrPSNlG82loeVQMZ6WjOH0G+wg7ncZA1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikla\\Desktop\\newdatabase\\Groceries\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\nikla\\Desktop\\KursinlmCS\\Groceries\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikla\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\nikla\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
