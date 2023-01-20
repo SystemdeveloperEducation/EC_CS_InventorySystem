@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "btamKClTTqFXHF+BSJUtFLg3aTY/i5MEcpmQlm7KMbGcVRegbee1/Sky9XDrGfkA8803aC+wQ4lWyyEYNTfC9Q==",
+  "dgSpecHash": "o2RI0Y7q1GLmeddPx3G45uOlQZqAI6yNE7wjPzkCP1OqRrP62v6TSLpWUVBOU8/RazFgmXThMMpM9Poru28uVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikla\\Desktop\\newdatabase\\Groceries\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\nikla\\Desktop\\KursinlmCS\\Groceries\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikla\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.2\\microsoft.data.sqlite.core.7.0.2.nupkg.sha512",
     "C:\\Users\\nikla\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",

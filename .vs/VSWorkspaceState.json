@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Groceries",
+    "\\Groceries\\API",
+    "\\Groceries\\Persistence",
     "\\InvSystem",
     "\\InvSystem\\InvSystem",
-    "\\InvSystem\\InvSystem\\Pages",
-    "\\InvSystem\\InvSystem\\Shared"
+    "\\InvSystem\\InvSystem\\Pages"
   ],
-  "SelectedNode": "\\InvSystem\\InvSystem\\InvSystem.csproj",
   "PreviewInSolutionExplorer": false
 }

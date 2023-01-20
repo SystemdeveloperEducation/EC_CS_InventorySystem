@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iPe/O7W+hDG+4Bxk+LGJ2s2hzTmXtGZkSSoOxjosu1oJMGxx65ru+XQJgkhZH2PXM7MquT9VTl0nyWVFvWgDjg==",
+  "dgSpecHash": "VfJtQ/WO/anaU/Yf/KlLYBN1rx3hNanSvv4gqgowJ20M26JS9ok4jYsiGo3jJT1bJaZbTIYDtsZMNHmsKQXknA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikla\\Desktop\\newdatabase\\Groceries\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\nikla\\Desktop\\KursinlmCS\\Groceries\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
