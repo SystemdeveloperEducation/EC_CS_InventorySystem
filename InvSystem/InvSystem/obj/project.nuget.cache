@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+XE344o29w6WwBNxUVnaHPaHOehFhtyB9TaWw1+lhUY7wEGUuw+9DhpIozJhOECbIA0Vg0AGOycr0GOjgm7r+w==",
+  "dgSpecHash": "cCG2PgEwIB7TG8lH6tOLNmUSRH8LNI2khFNzWOoPieGMz+02Sj/vhFQGsVMABrM82ybyNwphhtsdOtGEJ+3cIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikla\\Desktop\\KursinlmCS\\InvSystem\\InvSystem\\InvSystem.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/loco/Git/EC_CS_InventorySystem/InvSystem/InvSystem/InvSystem.csproj",
+  "expectedPackageFiles": [
+    "/home/loco/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.1/microsoft.aspnetcore.app.ref.7.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
