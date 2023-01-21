@@ -1,8 +1,0 @@
-/home/loco/Git/EC_CS_InventorySystem/InvSystem/InvSystem/obj/Debug/net7.0/InvSystem.csproj.AssemblyReference.cache
-/home/loco/Git/EC_CS_InventorySystem/InvSystem/InvSystem/obj/Debug/net7.0/InvSystem.GeneratedMSBuildEditorConfig.editorconfig
-/home/loco/Git/EC_CS_InventorySystem/InvSystem/InvSystem/obj/Debug/net7.0/InvSystem.AssemblyInfoInputs.cache
-/home/loco/Git/EC_CS_InventorySystem/InvSystem/InvSystem/obj/Debug/net7.0/InvSystem.AssemblyInfo.cs
-/home/loco/Git/EC_CS_InventorySystem/InvSystem/InvSystem/obj/Debug/net7.0/InvSystem.csproj.CoreCompileInputs.cache
-/home/loco/Git/EC_CS_InventorySystem/InvSystem/InvSystem/obj/Debug/net7.0/InvSystem.MvcApplicationPartsAssemblyInfo.cache
-/home/loco/Git/EC_CS_InventorySystem/InvSystem/InvSystem/obj/Debug/net7.0/InvSystem.RazorAssemblyInfo.cache
-/home/loco/Git/EC_CS_InventorySystem/InvSystem/InvSystem/obj/Debug/net7.0/InvSystem.RazorAssemblyInfo.cs
