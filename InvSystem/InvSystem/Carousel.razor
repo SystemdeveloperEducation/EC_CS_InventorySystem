@@ -1,10 +1,13 @@
-﻿<h3>Carousel</h3>
+﻿@page "/carousel";
+@using Data;
+@using Newtonsoft.Json; 
+<h3>Carousel</h3>
 
 <div class="carousel">
-    @foreach (var card in cards.Skip((currentSlide - 1) * 4).Take(4))
+    @foreach (var card in cards)
     {
         <div class="card">
-            <img src="@card.ImageUrl" alt="@card.Title" />
+            <img src="@card.Img_url" alt="@card.Title" />
             <div class="card-body">
                 <h4 class="card-title">@card.Title</h4>
                 <p class="card-price">@card.Price</p>
@@ -15,21 +18,28 @@
         </div>
     }
 
-    <button @onclick="NextSlide">></button>>
-    <button @onclick="PreviousSlide"><</button>
+    <button @onclick="NextSlide">next</button>
+    <button @onclick="PreviousSlide">prev</button>
 </div>
 
 @code {
 
+        private List<Card> cards = new List<Card>();
+
         private async Task GetApiInfo()
         {
             var client = new HttpClient();
-            var response = await client.GetAsync("https://localhost:44394/api/Products");
-            var cadsJson = await response.Content.ReadAsStringAsync();
-            card = JsonConvert.DeserializeObject<List<Card>>(cadsJson);
+            var response = await client.GetAsync("http://localhost:5000/api/groceries");
+            var cardsJson = await response.Content.ReadAsStringAsync();
+            cards = JsonConvert.DeserializeObject<List<Card>>(cardsJson);
+            foreach (var card in cards)
+            {   Console.WriteLine($"this are the cars {0}: " + card.Img_url);
+            }
         }
 
-    protected override async Task onInitializedAsync()
+
+    @* protected override async Task onInitializedAsync() *@
+      protected override async Task OnInitializedAsync()
     {
         await GetApiInfo();
     }

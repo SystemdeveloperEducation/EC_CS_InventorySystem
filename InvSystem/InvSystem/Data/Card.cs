@@ -4,7 +4,7 @@ namespace InvSystem.Data
 {
     public class Card
     {
-        public string ImageUrl { get; set; }
+        public string Img_url { get; set; }
         public string Title { get; set; }
 
         public double Price { get; set; }
