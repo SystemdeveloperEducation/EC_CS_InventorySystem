@@ -2,9 +2,8 @@
 @using Data;
 @using Newtonsoft.Json;
 <h3>Carousel</h3>
-
 <div class="carousel">
-    <button @onclick="PreviousSlide"></button>
+    <button @onclick="PreviousSlide">&lt</button>
     @foreach (var card in cards.Skip((currentSlide - 1) * 4).Take(4))
     {
         <div class="card">
@@ -19,9 +18,10 @@
         </div>
     }
 
-    <button @onclick="NextSlide">next</button>
+    <button @onclick="NextSlide">&gt</button>
 
 </div>
+
 
 @code {
 
