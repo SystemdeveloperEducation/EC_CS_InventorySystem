@@ -1,10 +1,9 @@
 .carousel {
     display: flex;
     flex-direction: row;
-  position: relative;
+    position: relative;
 
 }
-
 
 .card {
     width: 100%;
@@ -23,6 +22,28 @@
     cursor: pointer;
 }
 
+.titleContainer {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-price {
+    font-size: 12px;
+}
+
+.card-jmfrpris {
+    font-size: 12px;
+}
+
+.card-country {
+    font-size: 12px;
+}
+
 .card:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px #ccc;
@@ -35,7 +56,7 @@
 
 }
 
-.carousel > button{
+.carousel>button {
     width: 10%;
     border: none;
     border-radius: 5px;
@@ -43,12 +64,26 @@
     opacity: 0.4;
     margin: 10px;
     color: rgba(45, 65, 196, 1);
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    height: 30px;
 }
 
-.carousel > button:hover{
+.carousel>button:hover {
     opacity: 0.6;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addToCartBtn {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+
 }

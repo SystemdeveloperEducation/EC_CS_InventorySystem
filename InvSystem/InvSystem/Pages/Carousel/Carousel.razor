@@ -1,21 +1,35 @@
 ﻿@page "/carousel";
 @using Data;
 @using Newtonsoft.Json;
-<h3>Carousel</h3>
+@using System.Linq;
+
+
+<h3>Frukt</h3>
 <div class="carousel">
     <button @onclick="PreviousSlide">&lt</button>
-    @foreach (var card in cards.Skip((currentSlide - 1) * 4).Take(4))
+    @foreach (var card in cards.Skip((currentSlide - 1) * 6).Take(6))
     {
         <div class="card">
             <img src="@card.Img_url" alt="@card.Title" class="product_Img" />
             <div class="card-body">
-                <h4 class="card-title">@card.Title</h4>
-                <p class="card-price">@card.Price</p>
-                <p class="card-jmfrpris">Kr/kg: @card.JmfrPris</p>
-                <p class="card-country">@card.CountryOfOrigin</p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
+                <div class="row">
+                    <div class="col-12 titleContainer">
+                        <h6 class="card-title">@card.Title</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 prodInfoContainer">
+                        <p class="card-price">@card.Price</p>
+                        <p class="card-jmfrpris">Kr/kg: @card.JmfrPris</p>
+                        <p class="card-country">@card.CountryOfOrigin</p>
+                    </div>
+                    <div class="col-6 btn-container">
+                        <a href="#" class="btn btn-primary addToCartBtn">Köp</a>
+                    </div>
+                </div>
             </div>
         </div>
+
     }
 
     <button @onclick="NextSlide">&gt</button>
@@ -32,7 +46,9 @@
         var client = new HttpClient();
         var response = await client.GetAsync("http://localhost:5000/api/groceries");
         var cardsJson = await response.Content.ReadAsStringAsync();
-        cards = JsonConvert.DeserializeObject<List<Card>>(cardsJson);
+        var allCards = JsonConvert.DeserializeObject<List<Card>>(cardsJson);
+        cards = allCards.Where(c => c.Category == "Frukt").ToList();
+
     }
 
 
@@ -48,7 +64,7 @@
     {
         if (currentSlide == 1)
         {
-            currentSlide = cards.Count / 4;
+            currentSlide = cards.Count / 6;
         }
         else
         {
@@ -58,7 +74,7 @@
 
     private void NextSlide()
     {
-        if (currentSlide == cards.Count / 4)
+        if (currentSlide == cards.Count / 6)
         {
             currentSlide = 1;
         }
