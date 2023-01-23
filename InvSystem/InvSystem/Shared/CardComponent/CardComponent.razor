@@ -1,0 +1,35 @@
+@using Data;
+
+
+
+@* <h4>My card component</h4> *@
+@* <h4> @card.Price </h4> *@
+
+        <div class="card">
+            <img src="@card.Img_url" alt="@card.Title" class="product_Img" />
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 titleContainer">
+                        <h6 class="card-title">@card.Title</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 prodInfoContainer">
+                        <p class="card-price">@card.Price</p>
+                        <p class="card-jmfrpris">Kr/kg: @card.JmfrPris</p>
+                        <p class="card-country">@card.CountryOfOrigin</p>
+                    </div>
+                    <div class="col-6 btn-container">
+                        <a href="#" class="btn btn-primary addToCartBtn">Köp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+@code {
+    [Parameter]
+    public Card card { get; set; }
+    @* public string tCard { get; set; } *@
+}
