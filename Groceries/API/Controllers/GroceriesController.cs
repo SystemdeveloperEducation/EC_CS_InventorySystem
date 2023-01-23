@@ -11,8 +11,6 @@ namespace API.Controllers
         public GroceriesController(DataContext context)
         {
             _context = context;
-
-
         }
 
         [HttpGet] //api/groceries
