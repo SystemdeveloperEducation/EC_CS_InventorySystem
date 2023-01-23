@@ -4,7 +4,7 @@
 <h3>Carousel</h3>
 
 <div class="carousel">
-    @foreach (var card in cards)
+    @foreach (var card in cards.Skip((currentSlide - 1) * 4).Take(4))
     {
         <div class="card">
             <img src="@card.Img_url" alt="@card.Title" />
@@ -32,9 +32,6 @@
             var response = await client.GetAsync("http://localhost:5000/api/groceries");
             var cardsJson = await response.Content.ReadAsStringAsync();
             cards = JsonConvert.DeserializeObject<List<Card>>(cardsJson);
-            foreach (var card in cards)
-            {   Console.WriteLine($"this are the cars {0}: " + card.Img_url);
-            }
         }
 
 

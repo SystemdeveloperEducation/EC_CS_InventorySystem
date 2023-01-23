@@ -38,11 +38,11 @@ namespace Persistence.Migrations
                     b.Property<string>("Info")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("JmfrPris")
-                        .HasColumnType("INTEGER");
+                    b.Property<double>("JmfrPris")
+                        .HasColumnType("REAL");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("INTEGER");
+                    b.Property<double>("Price")
+                        .HasColumnType("REAL");
 
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
