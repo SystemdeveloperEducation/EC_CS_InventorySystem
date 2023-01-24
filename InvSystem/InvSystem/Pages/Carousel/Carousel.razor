@@ -1,93 +1,9 @@
 ﻿@page "/carousel";
-@using Data;
-@using Newtonsoft.Json;
-@using System.Linq;
-@* @using Shared.CardComponent; *@
-
-<h3>Frukt</h3>
-<div class="carousel">
-    <button @onclick="PreviousSlide">&lt</button>
-    @foreach (var card in cards.Skip((currentSlide - 1) * 6).Take(6))
-    {
-        @* <div class="card"> *@
-        @*     <img src="@card.Img_url" alt="@card.Title" class="product_Img" /> *@
-        @*     <div class="card-body"> *@
-        @*         <div class="row"> *@
-        @*             <div class="col-12 titleContainer"> *@
-        @*                 <h6 class="card-title">@card.Title</h6> *@
-        @*             </div> *@
-        @*         </div> *@
-        @*         <div class="row"> *@
-        @*             <div class="col-6 prodInfoContainer"> *@
-        @*                 <p class="card-price">@card.Price</p> *@
-        @*                 <p class="card-jmfrpris">Kr/kg: @card.JmfrPris</p> *@
-        @*                 <p class="card-country">@card.CountryOfOrigin</p> *@
-        @*             </div> *@
-        @*             <div class="col-6 btn-container"> *@
-        @*                 <a href="#" class="btn btn-primary addToCartBtn">Köp</a> *@
-        @*             </div> *@
-        @*         </div> *@
-        @*     </div> *@
-        @* </div> *@
-
-        <CardComponent card=@card />
-    }
-
-    <button @onclick="NextSlide">&gt</button>
-
-</div>
-
-@code {
-
-    private List<Card> cards = new List<Card>();
-    public Card sendThisCard = new Card(); 
-
-    private async Task GetApiInfo()
-    {
-        var client = new HttpClient();
-        var response = await client.GetAsync("http://localhost:5000/api/groceries");
-        var cardsJson = await response.Content.ReadAsStringAsync();
-        var allCards = JsonConvert.DeserializeObject<List<Card>>(cardsJson);
-        cards = allCards.Where(c => c.Category == "Frukt").ToList();
-
-    }
-
-    @* public Card thisCard() *@
-    @* { *@
-    @*     return cards[0]; *@
-    @* } *@
+<CarouselComponent category="Frukt"></CarouselComponent>
+<CarouselComponent category="Grönsaker"></CarouselComponent>
+<CarouselComponent category="Mejeri"></CarouselComponent>
+<CarouselComponent category="Kött & Chark"></CarouselComponent>
 
 
-    @* protected override async Task onInitializedAsync() *@
-    protected override async Task OnInitializedAsync()
-    {
-        await GetApiInfo();
-        sendThisCard = cards [0]; 
-    }
-
-    private int currentSlide = 1;
-
-    private void PreviousSlide()
-    {
-        if (currentSlide == 1)
-        {
-            currentSlide = cards.Count / 6;
-        }
-        else
-        {
-            currentSlide--;
-        }
-    }
-
-    private void NextSlide()
-    {
-        if (currentSlide == cards.Count / 6)
-        {
-            currentSlide = 1;
-        }
-        else
-        {
-            currentSlide++;
-        }
-    }
+@code{
 }
