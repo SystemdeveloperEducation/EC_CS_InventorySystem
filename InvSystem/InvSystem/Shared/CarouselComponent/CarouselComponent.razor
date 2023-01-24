@@ -2,7 +2,7 @@
 @using System.Linq;
 @using static Shared.Services.Fetchdata;
 
-<h3>Frukt</h3>
+<h3>@category.ToUpper()</h3>
 <div class="carousel">
     <button @onclick="PreviousSlide">&lt</button>
     @foreach (var card in cards.Skip((currentSlide - 1) * 6).Take(6))
