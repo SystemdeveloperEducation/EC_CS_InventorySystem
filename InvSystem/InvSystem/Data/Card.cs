@@ -16,6 +16,6 @@ namespace InvSystem.Data
         public string CountryOfOrigin { get; set; }
 
         public string Description { get; set; }
-        public bool IsLiquid { get; set; }
+        // public bool IsLiquid { get; set; }
     }
 }
