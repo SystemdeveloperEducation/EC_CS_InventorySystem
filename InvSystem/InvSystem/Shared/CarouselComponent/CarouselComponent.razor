@@ -1,0 +1,52 @@
+@* @page "/carousel"; *@
+@using System.Linq;
+@using static Shared.Services.Fetchdata;
+
+<h3>Frukt</h3>
+<div class="carousel">
+    <button @onclick="PreviousSlide">&lt</button>
+    @foreach (var card in cards.Skip((currentSlide - 1) * 6).Take(6))
+    {
+        <CardComponent card=@card />
+    }
+    <button @onclick="NextSlide">&gt</button>
+
+</div>
+
+@code {
+    [Parameter]
+    public string category { get; set; }
+
+    private List<Card> cards = new List<Card>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        cards = await GetApiInfo(category);
+    }
+
+    private int currentSlide = 1;
+
+    private void PreviousSlide()
+    {
+        if (currentSlide == 1)
+        {
+            currentSlide = cards.Count / 6;
+        }
+        else
+        {
+            currentSlide--;
+        }
+    }
+
+    private void NextSlide()
+    {
+        if (currentSlide == cards.Count / 6)
+        {
+            currentSlide = 1;
+        }
+        else
+        {
+            currentSlide++;
+        }
+    }
+}

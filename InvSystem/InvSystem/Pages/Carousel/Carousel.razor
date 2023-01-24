@@ -1,66 +1,8 @@
 ﻿@page "/carousel";
-@using Data;
-
-@using System.Linq;
-@using static Shared.Services.Fetchdata;
-
-<h3>Frukt</h3>
-<div class="carousel">
-    <button @onclick="PreviousSlide">&lt</button>
-    @foreach (var card in cards.Skip((currentSlide - 1) * 6).Take(6))
-    {
-
-        <CardComponent card=@card />
-    }
-
-    <button @onclick="NextSlide">&gt</button>
-
-</div>
-
-@code {
+<CarouselComponent category="Frukt"></CarouselComponent>
+<CarouselComponent category="Kött & Chark"></CarouselComponent>
+<CarouselComponent category="Mejeri"></CarouselComponent>
 
 
-    private List<Card> cards = new List<Card>();
-
-    /* private async Task GetApiInfo()
-    {
-    var client = new HttpClient();
-    var response = await client.GetAsync("http://localhost:5000/api/groceries");
-    var cardsJson = await response.Content.ReadAsStringAsync();
-    var allCards = JsonConvert.DeserializeObject<List<Card>>(cardsJson);
-    cards = allCards.Where(c => c.Category == "Frukt").ToList();
-
-    } */
-
-
-    protected override async Task OnInitializedAsync()
-    {
-        cards = await GetApiInfo("Frukt");
-    }
-
-    private int currentSlide = 1;
-
-    private void PreviousSlide()
-    {
-        if (currentSlide == 1)
-        {
-            currentSlide = cards.Count / 6;
-        }
-        else
-        {
-            currentSlide--;
-        }
-    }
-
-    private void NextSlide()
-    {
-        if (currentSlide == cards.Count / 6)
-        {
-            currentSlide = 1;
-        }
-        else
-        {
-            currentSlide++;
-        }
-    }
+@code{
 }
