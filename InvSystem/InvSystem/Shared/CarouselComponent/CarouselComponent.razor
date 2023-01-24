@@ -2,15 +2,15 @@
 @using System.Linq;
 @using static Shared.Services.Fetchdata;
 
-<h3>@category.ToUpper()</h3>
+@* <h3>@category.ToUpper()</h3> *@
 <div class="carousel">
-    <button @onclick="PreviousSlide">&lt</button>
-    @foreach (var card in cards.Skip((currentSlide - 1) * 6).Take(6))
+    @* <button @onclick="PreviousSlide">&lt</button> *@
+    @foreach (var card in cards.Skip((currentSlide - 1) * 5).Take(5))
     {
         <CardComponent card=@card />
     }
-    <button @onclick="NextSlide">&gt</button>
 
+    @* <button @onclick="NextSlide">&gt</button> *@
 </div>
 
 @code {
@@ -30,7 +30,7 @@
     {
         if (currentSlide == 1)
         {
-            currentSlide = cards.Count / 6;
+            currentSlide = cards.Count / 5;
         }
         else
         {
@@ -40,7 +40,7 @@
 
     private void NextSlide()
     {
-        if (currentSlide == cards.Count / 6)
+        if (currentSlide == cards.Count / 5)
         {
             currentSlide = 1;
         }

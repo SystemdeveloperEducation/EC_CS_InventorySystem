@@ -1,51 +1,84 @@
 .card {
-    width: 100%;
-    height: 10%;
+    width: 150%;
+    max-height: 10%;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 15px #ccc;
     margin: 10px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     transition: all 0.3s ease;
-    cursor: pointer;
+
 }
+
+
 
 .titleContainer {
     text-align: center;
 }
 
 .card-title {
-    font-weight: 600;
+    font-size: 17px;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 0 20px 0px;
+}
+
+.prodPriceContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .card-price {
-    font-size: 12px;
+    font-size: 16px;
+    background-color: rgb(235, 231, 23);
+    padding: 5px;
+    border-radius: 15px;
+    color: rgb(243, 48, 48);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.jmfrPriceContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .card-jmfrpris {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.prodCountryContainer {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    margin-left: 0;
 }
 
 .card-country {
-    font-size: 12px;
+    font-size: 9px;
+    font-weight: 600;
+    margin: 12px 20px 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px #ccc;
+    transform: scale(0.98);
+    box-shadow: 0 0 15px rgb(151, 151, 151);
 }
 
 
 
 .product_Img {
+    margin: 15px 0 0 0;
     height: 100px;
+    max-width: 120px;
+    border-radius: 5px;
 
 }
 
@@ -53,10 +86,20 @@
     font-size: 15px;
     padding: 10px;
     margin: 0;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(29, 150, 93);
 
 }
+
+.addToCartBtn:hover {
+    background-color: rgb(43, 196, 125);
+    color: #fff;
+}
+
 .btn-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    text-align: center;
 }
