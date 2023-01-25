@@ -1,8 +1,12 @@
+.topHeadingCont {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
 .carousel {
     display: flex;
     flex-direction: row;
-    position: relative;
-
 }
 
 .carousel>button {
@@ -22,4 +26,54 @@
 
 .carousel>button:hover {
     opacity: 0.6;
+}
+
+.CarouselHolder {
+    margin: 30px 0 30px 0;
+}
+
+.btn-containerLeft {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn-containerRight {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.slideBtnLeft {
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    border-radius: 35px;
+    border: none;
+    background-color: rgb(29, 150, 93);
+}
+
+.slideBtnRight {
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    border-radius: 35px;
+    border: none;
+    background-color: rgb(29, 150, 93);
+    margin-left: 20px;
+}
+
+.slideBtn:hover {
+    background-color: rgb(43, 196, 125);
+    color: #fff;
+}
+
+.headingContainer {
+    margin-left: 100px;
+}
+
+.categoryHeading {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
 }
