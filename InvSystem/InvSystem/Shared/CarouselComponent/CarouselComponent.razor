@@ -2,15 +2,31 @@
 @using System.Linq;
 @using static Shared.Services.Fetchdata;
 
-<h3>@category.ToUpper()</h3>
-<div class="carousel">
-    <button @onclick="PreviousSlide">&lt</button>
-    @foreach (var card in cards.Skip((currentSlide - 1) * 6).Take(6))
-    {
-        <CardComponent card=@card />
-    }
-    <button @onclick="NextSlide">&gt</button>
+<div class="container topHeadingCont">
+    <div class="row">
+        <div class="col-12 headingContainer">
+            <h3 class="categoryHeading">@category.ToUpper()</h3>
+        </div>
+    </div>
+</div>
 
+<div class="container carousel justify-content-center">
+  <div class="row">
+        <div class="col-1 btn-containerLeft">
+            <button class="slideBtnLeft" @onclick="PreviousSlide">&lt</button>
+        </div>
+        
+    @foreach (var card in cards.Skip((currentSlide - 1) * 5).Take(5))
+    {
+        <div class="col-2 cardContainer">
+        <CardComponent card=@card />
+        </div>
+    }
+        
+        <div class="col-1 btn-containerRight">
+            <button class="slideBtnRight" @onclick="NextSlide">&gt</button>
+        </div>  
+    </div>
 </div>
 
 @code {
@@ -30,7 +46,7 @@
     {
         if (currentSlide == 1)
         {
-            currentSlide = cards.Count / 6;
+            currentSlide = cards.Count / 5;
         }
         else
         {
@@ -40,7 +56,7 @@
 
     private void NextSlide()
     {
-        if (currentSlide == cards.Count / 6)
+        if (currentSlide == cards.Count / 5)
         {
             currentSlide = 1;
         }

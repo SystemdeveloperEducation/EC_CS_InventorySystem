@@ -1,23 +1,34 @@
-        <div class="card">
-            <img src="@card.Img_url" alt="@card.Title" class="product_Img" />
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 titleContainer">
-                        <h6 class="card-title">@card.Title</h6>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 prodInfoContainer">
-                        <p class="card-price">@card.Price @ValidatePrice()</p>
-                        <p class="card-jmfrpris">Kr/kg: @card.JmfrPris</p>
-                        <p class="card-country">@card.CountryOfOrigin</p>
-                    </div>
-                    <div class="col-6 btn-container">
-                        <a href="#" class="btn btn-primary addToCartBtn">Köp</a>
-                    </div>
-                </div>
+<div class="card">
+    <div class="imgcontainer">
+        <img src="@card.Img_url" alt="@card.Title" class="product_Img" />
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12 titleContainer">
+                <h6 class="card-title">@card.Title</h6>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 prodPriceContainer">
+                <p class="card-price">@card.Price @ValidatePrice()</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 jmfrPriceContainer">
+                <p class="card-jmfrpris">Jmfrpris/kg: @card.JmfrPris</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9 prodCountryContainer">
+                <p class="card-country">@card.CountryOfOrigin</p>
+            </div>
+            <div class="col-3 btn-container">
+                <a href="#" class="btn btn-primary addToCartBtn">Köp</a>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 @code {
     [Parameter]
@@ -28,15 +39,15 @@
 
     private string ValidatePrice()
     {
-      if(card.Price < card.JmfrPris)
-      {
-        return stPris;
-      }
-      else
-      {
-        return kgPris;
-      }
+        if (card.Price < card.JmfrPris)
+        {
+            return stPris;
+        }
+        else
+        {
+            return kgPris;
+        }
     }
 
-    
+
 }
