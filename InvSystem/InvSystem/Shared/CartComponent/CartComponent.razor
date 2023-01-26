@@ -1,0 +1,28 @@
+
+
+
+
+
+<div>GetProducts()</div>
+
+
+
+
+
+@code {
+
+
+    private Cart _cart = new Cart();
+
+    private void AddProductToCart(Card product)
+    {
+        _cart.AddCard(product);
+        SaveCartToLocalStorage(_cart);
+    }
+
+    private void SaveCartToLocalStorage(Cart cart)
+    {
+        string json = JsonConvert.SerializeObject(cart);
+        SaveCartToLocalStorage.SetItem("Cart", json);
+    }
+}

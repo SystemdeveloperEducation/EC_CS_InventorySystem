@@ -23,7 +23,7 @@
                 <p class="card-country">@card.CountryOfOrigin</p>
             </div>
             <div class="col-3 btn-container">
-                <a href="#" class="btn btn-primary addToCartBtn">Köp</a>
+                <a href="#" class="btn btn-primary addToCartBtn" @onclick="@(() => AddProductToCart(card))">Köp</a>
             </div>
         </div>
 
