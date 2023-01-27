@@ -6,7 +6,7 @@ using static InvSystem.Data.Card;
 
 namespace InvSystem.Data
 {
-    public class Cart
+    public class Cart : Card
     {
 
         private List<Card> _products;
@@ -16,10 +16,11 @@ namespace InvSystem.Data
             _products = new List<Card>();
         }
 
-        public void AddProduct(Card product)
+        public void AddProductToCart(Card product)
         {
             _products.Add(product);
         }
+
 
         public void RemoveProduct(Card product)
         {

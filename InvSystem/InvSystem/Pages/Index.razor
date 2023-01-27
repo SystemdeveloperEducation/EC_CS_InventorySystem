@@ -1,8 +1,21 @@
-﻿@page "/"
+﻿@using static InvSystem.Shared.Services.Fetchdata;
+
+@page "/"
 
 <HeroComponent />
 <SearchComponent />
 
-<CarouselComponent category="Frukt"></CarouselComponent>
+<CarouselComponent category="Frukt" allCards=@allCards></CarouselComponent>
         
-<CarouselComponent category="Grönsaker"></CarouselComponent>
+<CarouselComponent category="Grönsaker" allCards=@allCards></CarouselComponent>
+
+@* <CartComponent></CartComponent> *@
+@code {
+
+    public List<Card> allCards; 
+        protected override async Task<List<Card>> OnInitializedAsync()
+    {
+        allCards = await GetApiInfo();
+        return allCards;
+    }
+}
