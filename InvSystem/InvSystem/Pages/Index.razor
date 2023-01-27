@@ -1,21 +1,23 @@
 ﻿@using static InvSystem.Shared.Services.Fetchdata;
-
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject ProtectedSessionStorage ProtectedSessionStore
 @page "/"
 
 <HeroComponent />
 <SearchComponent />
 
-<CarouselComponent category="Frukt" allCards=@allCards></CarouselComponent>
-        
-<CarouselComponent category="Grönsaker" allCards=@allCards></CarouselComponent>
+@* <CarouselComponent category="Frukt" allCards=@allCards></CarouselComponent> *@
+@*          *@
+@* <CarouselComponent category="Grönsaker" allCards=@allCards></CarouselComponent> *@
 
 @* <CartComponent></CartComponent> *@
 @code {
 
-    public List<Card> allCards; 
-        protected override async Task<List<Card>> OnInitializedAsync()
-    {
-        allCards = await GetApiInfo();
-        return allCards;
-    }
+  protected override async Task OnInitializedAsync()
+{
+   var allCards = await GetApiInfo();
+   await ProtectedSessionStore.SetAsync("allCards", allCards);
+    var result = await ProtectedSessionStore.GetAsync<int>("allCards");
+    Console.WriteLine(result);
+}
 }

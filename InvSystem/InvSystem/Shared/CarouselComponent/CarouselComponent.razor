@@ -1,7 +1,7 @@
 @* @page "/carousel"; *@
 @using System.Linq;
 @using static Shared.Services.Fetchdata;
-@using static Shared.Services.FilterData;
+@using static InvSystem.Shared.Services.FilterData;
 
 <div class="container topHeadingCont">
     <div class="row">
@@ -39,7 +39,7 @@
     public List<Card> cards { get; set; }
     protected override async Task OnInitializedAsync()
     {
-        cards = await ProductsFiltered(category, allCards);
+        cards =  ProductsFiltered(category, allCards);
     }
 
     private int currentSlide = 1;
