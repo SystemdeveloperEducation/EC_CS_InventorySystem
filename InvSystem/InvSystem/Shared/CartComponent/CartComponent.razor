@@ -1,5 +1,7 @@
-
-
+@using System.Linq;
+@using static Shared.Services.Fetchdata;
+@using static Data.Cart;
+@using Newtonsoft.Json;
 
 
 
@@ -12,17 +14,12 @@
 @code {
 
 
-    private Cart _cart = new Cart();
+    public Cart _cart = new Cart();
 
-    private void AddProductToCart(Card product)
-    {
-        _cart.AddCard(product);
-        SaveCartToLocalStorage(_cart);
-    }
 
-    private void SaveCartToLocalStorage(Cart cart)
+    /* private void SaveCartToLocalStorage(Cart cart)
     {
         string json = JsonConvert.SerializeObject(cart);
         SaveCartToLocalStorage.SetItem("Cart", json);
-    }
+    }*/
 }
