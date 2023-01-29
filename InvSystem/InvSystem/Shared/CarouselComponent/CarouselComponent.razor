@@ -16,7 +16,6 @@
         <div class="col-1 btn-containerLeft">
             <button class="slideBtnLeft" @onclick="PreviousSlide">&lt</button>
         </div>
-        
     @foreach (var card in cards.Skip((currentSlide - 1) * 5).Take(5))
     {
         <div class="col-2 cardContainer">
@@ -29,26 +28,44 @@
         </div>  
     </div>
 </div>
+<div>@cards.Count </div>
 
 @code {
     [Parameter]
     public string category { get; set; }
-    [Parameter]
-    public List<Card> allCards { get; set; }
-
-    public List<Card> cards { get; set; }
+ 
+    public List<Card> cards { get; set; } = new List<Card>();
+// Visa för fransisco att parametern cards går ej att andvända i code delen here under, den blir noll.
+//    [Parameter]
+//    public List<Card> cards { get; set; } = new List<Card>();
+//    
+//    [Parameter]
+//    public List<String> strings { get; set; }
+//
     protected override async Task OnInitializedAsync()
     {
-        cards =  ProductsFiltered(category, allCards);
+      var allCards = await GetApiInfo();
+       writeNumberOfCards();
+       cards = GetCategoriesCards(category, allCards); // Ändra allcards till cards nar vi visar för francisco
+//       Console.WriteLine("This is the allCards inside CarouselCOMPONENT!!! OnInitialize:  " + filteredCards.Count); // commentera ut detta Fransisco
+    
+       Console.WriteLine("This is are the card recieved from  iNDEX## :  " + cards.Count);
+//       Console.WriteLine("This are the Strings recieved from  iNDEX## :  " + strings.Count); // och detta
+       Console.WriteLine("This is the CATEGORY recieved from  iNDEX## :  " + category);
     }
-
+//
     private int currentSlide = 1;
+
+    private void writeNumberOfCards()
+    {
+        Console.WriteLine("This is the number of cards in the carousel: " + cards.Count);
+    }
 
     private void PreviousSlide()
     {
         if (currentSlide == 1)
         {
-            currentSlide = allCards.Count / 5;
+            currentSlide = cards.Count / 5;
         }
         else
         {
@@ -58,7 +75,7 @@
 
     private void NextSlide()
     {
-        if (currentSlide == allCards.Count / 5)
+        if (currentSlide == cards.Count / 5)
         {
             currentSlide = 1;
         }

@@ -1,9 +1,10 @@
-using InvSystem.Data;
 using System;
 using System.Collections.Generic;
+using InvSystem.Data;
+using InvSystem.Shared.Services;
+using Moq;
 using Newtonsoft.Json;
 using Xunit;
-using Moq;
 
 namespace Application.UnitTests;
 
@@ -14,9 +15,6 @@ public class FetchDataTests
     {
         // Arrange
         var category = "Frukt";
-        var mockHandler = new Mock<HttpMessageHandler>();
-        var groceriesClient = new HttpClient(mockHandler.Object);
-        // var groceriesClient = new Mock<HttpClient>();
         var cards = new List<Card>()
         {
             new Card{ Title = "Banan", Category = "Frukt" },// kött
@@ -27,21 +25,6 @@ public class FetchDataTests
             new Card{ Title = "Fläskfärs", Category = "Kött & Chark" },
         };
 
-        // groceriesClient.Setup(x => x.GetAsync(It.IsAny<string>())).ReturnsAsync(It.IsAny<string>());
-        var result = new HttpResponseMessage(HttpStatusCode.OK)
-        {
-            Content = new StringContent(JsonConvert.SerializeObject(cards))
-        };
-        //var response = groceriesClient.GetAsync(It.IsAny<string>()).Returns(It.IsAny<string>());
-        // groceriesClient.Setup(x => x.Content.ReadAsStringAsync()).ReturnsAsync(It.IsAny<string>());
-        //var responseContent = g.Content.ReadAsStringAsync().Returns(It.IsAny<string>());
-        //var allacard = JsonConvert.DeserializeObject<List<Card>>(groceriesClient).Returns(cards);
-
-
-
-
-
-
         var expected = new List<Card>
         {
             new Card { Title = "Banan", Category = "Frukt" },
@@ -51,10 +34,10 @@ public class FetchDataTests
 
 
         // Act
-        var actual = fetchdata.GetApiInfo(category);
+        var actual = Fetchdata.GetCategoriesCards(category, cards);
 
         // Assert
-        Assert.Equal(expected, actual);
+        Assert.Equivalent(expected, actual);
 
     }
 
