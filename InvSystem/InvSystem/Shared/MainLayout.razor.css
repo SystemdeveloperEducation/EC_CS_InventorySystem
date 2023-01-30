@@ -72,3 +72,8 @@ main {
         padding-right: 1.5rem !important;
     }
 }
+
+.cartIcon {
+    font-size: 25px;
+    color: white;
+}
