@@ -1,6 +1,7 @@
 @* @page "/carousel"; *@
 @using System.Linq;
 @using static Shared.Services.Fetchdata;
+@using static InvSystem.Shared.Services.FilterData;
 
 <div class="container topHeadingCont">
     <div class="row">
@@ -15,7 +16,6 @@
         <div class="col-1 btn-containerLeft">
             <button class="slideBtnLeft" @onclick="PreviousSlide">&lt</button>
         </div>
-        
     @foreach (var card in cards.Skip((currentSlide - 1) * 5).Take(5))
     {
         <div class="col-2 cardContainer">
@@ -32,15 +32,16 @@
 @code {
     [Parameter]
     public string category { get; set; }
-
-    private List<Card> cards = new List<Card>();
-
+ 
+    public List<Card> cards { get; set; } = new List<Card>();
     protected override async Task OnInitializedAsync()
     {
-        cards = await GetApiInfo(category);
+      var allCards = await GetApiInfo();
+       cards = GetCategoriesCards(category, allCards); // Ändra allcards till cards nar vi visar för francisco
     }
-
+//
     private int currentSlide = 1;
+
 
     private void PreviousSlide()
     {

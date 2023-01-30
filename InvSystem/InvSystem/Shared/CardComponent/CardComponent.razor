@@ -1,3 +1,5 @@
+@using static InvSystem.Data.Cart;
+
 <div class="card">
     <div class="imgcontainer">
         <img src="@card.Img_url" alt="@card.Title" class="product_Img" />
@@ -23,7 +25,7 @@
                 <p class="card-country">@card.CountryOfOrigin</p>
             </div>
             <div class="col-3 btn-container">
-                <a href="#" class="btn btn-primary addToCartBtn">Köp</a>
+                <a href="#" class="btn btn-primary addToCartBtn" @onclick="@(() => shoppingCart.AddProductToCart(@card))">Köp</a>
             </div>
         </div>
 
@@ -37,6 +39,7 @@
     private string stPris = "kr/st";
     private string kgPris = "kr/kg";
 
+    private Cart shoppingCart = new Cart();
     private string ValidatePrice()
     {
         if (card.Price < card.JmfrPris)

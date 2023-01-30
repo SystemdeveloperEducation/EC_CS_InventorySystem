@@ -3,11 +3,11 @@
 
 name: .NET
 env:
-  TEST_PROJECT_PATH: ./Application.UnitTests/Application.UnitTests.csproj 
+  TEST_PROJECT_PATH: ./Application.UnitTests/Application.UnitTests.csproj
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "*" ]
   pull_request:
     branches: [ "main" ]
 
