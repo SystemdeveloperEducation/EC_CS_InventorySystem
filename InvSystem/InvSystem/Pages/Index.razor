@@ -8,6 +8,7 @@
 <HeroComponent />
 @if(cards is not null)
 {
+<CartComponent></CartComponent>
 <CarouselComponent category="Frukt" ></CarouselComponent>
 <CarouselComponent category="Grönsaker" ></CarouselComponent>
 <CarouselComponent category="Kött & Chark" ></CarouselComponent>
@@ -17,7 +18,6 @@ else
 {
     <div>Det finns inga varor i denna kategori</div>
 }
-@* <CartComponent></CartComponent> *@
 
 
 @code {

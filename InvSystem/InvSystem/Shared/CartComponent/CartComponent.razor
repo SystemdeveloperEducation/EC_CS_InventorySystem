@@ -4,9 +4,19 @@
 @using Newtonsoft.Json;
 
 
-
-<div>GetProducts()</div>
-
+@if(_cart.GetProducts().Count != 0 )
+{
+  <div>
+    <h3>Antal Produkter i kassan: @_cart.GetProducts().Count</h3>
+  </div>
+}
+else
+{
+    <div>Det finns inga varor i kundvagnen</div>
+    <div>
+      <h3>@_cart.GetProducts().Count</h3>
+    </div>
+}
 
 
 

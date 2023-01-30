@@ -9,7 +9,7 @@ namespace InvSystem.Data
     public class Cart : Card
     {
 
-        private List<Card> _products;
+        private static List<Card> _products;
 
         public Cart()
         {
@@ -19,6 +19,7 @@ namespace InvSystem.Data
         public void AddProductToCart(Card product)
         {
             _products.Add(product);
+            System.Console.WriteLine("This is the AddProductToCart: " + _products.Count);
         }
 
 
@@ -29,6 +30,7 @@ namespace InvSystem.Data
 
         public List<Card> GetProducts()
         {
+            System.Console.WriteLine("This si the GetProducts" + _products.Count);
             return _products;
         }
 
