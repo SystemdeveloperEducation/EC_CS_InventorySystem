@@ -1,11 +1,18 @@
 @using System.Linq;
 @using static Shared.Services.Fetchdata;
-@using static Data.Cart;
+@using static InvSystem.Data.Cart;
 @using Newtonsoft.Json;
 
 
 
-<div>GetProducts()</div>
+<div>
+    @if(kundvagnLista.Count != 0) {
+    <p>@kundvagnLista.Count</p>
+    }
+    else{
+        <p>Det finns ingenting</p>
+    }
+</div>
 
 
 
@@ -14,8 +21,8 @@
 @code {
 
 
-    public Cart _cart = new Cart();
-
+    public static Cart _cart = new Cart();
+    public List<Card> kundvagnLista = _cart.GetProducts();
 
     /* private void SaveCartToLocalStorage(Cart cart)
     {
