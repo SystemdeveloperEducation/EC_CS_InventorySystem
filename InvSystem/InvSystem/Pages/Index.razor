@@ -6,76 +6,31 @@
 
 
 <HeroComponent />
-<SearchComponent />
 @if(cards is not null)
 {
-@* Vissa för Fransisco att när man skciakr med cards och string så visas den i sidan men inte går att *@
-@*   andvända i @code delen *@
-@* <CarouselComponent category="Frukt" cards="@cards" strings="@allStrings" ></CarouselComponent> *@
-@* <CarouselComponent category="Grönsaker" cards="@cards" strings="@allStrings"></CarouselComponent> *@
 <CarouselComponent category="Frukt" ></CarouselComponent>
 <CarouselComponent category="Grönsaker" ></CarouselComponent>
 <CarouselComponent category="Kött & Chark" ></CarouselComponent>
+<CarouselComponent category="Mejeri" ></CarouselComponent>
 }
 else
 {
     <div>Det finns inga varor i denna kategori</div>
 }
-@* <CarouselComponent category="Frukt" allCards="@allCards"></CarouselComponent> *@
-@* <CarouselComponent category="Grönsaker" allCards=@allCards[0].Title></CarouselComponent> *@
-
 @* <CartComponent></CartComponent> *@
 
 
 @code {
 
     private List<Card> cards { get; set; } = new List<Card>(); 
-    private List<String> allStrings { get; set; } = new List<String>(){ "Frukt", "Grönsaker", "Kött", "Fisk", "Mejeri", "Kryddor", "Dryck", "Övrigt" };
+
     protected override async Task OnInitializedAsync()
     {
         cards = await GetApiInfo();
-        Console.WriteLine("This is the allCards inside OnInitialize in the Index.razor:  " + cards.Count);
     }
-  // public static List<Card> allCards; 
-
-
-  // protected override async Task OnInitializedAsync()
-  // {
-
-  //   allCards = await GetApiInfoTest("Furkt");
-  //   Console.WriteLine("This is the allCards inside OnInitialize:  " + allCards[0].Title);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // protected override async Task OnAfterRenderAsync(bool firstRender)
 // {
-//    // Store allCards in session storage
-//    await ProtectedSessionStore.SetAsync("allCards", allCards);
-//  // get allCards from session storage
-//    var sessionResult = await ProtectedSessionStore.GetAsync<List<card>>("allCards");
-//    allCardsToSend = sessionResult.Value;
-//    Console.WriteLine("sessionResultFromStorage Working: " + allCardsToSend[10].Title);
 
 //     // Store allCards in local storage
 //    await BrowserStorage.SetAsync("allCards", allCards[0]);
@@ -86,14 +41,6 @@ else
 //   var readFromLocalStorage = await Read();
 //   Console.WriteLine("this is the readFromLocalStorage------------->"+ readFromLocalStorage.Title);
 // }
-
-
-
-// public async Task<List<Card>> getallCards()
-//   {
-
-//     return await GetApiInfo();
-//   }
 
 // public async Task<Card> Read()
 //   {

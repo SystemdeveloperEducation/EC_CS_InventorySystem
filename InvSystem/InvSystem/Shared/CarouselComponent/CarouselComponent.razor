@@ -28,38 +28,20 @@
         </div>  
     </div>
 </div>
-<div>@cards.Count </div>
 
 @code {
     [Parameter]
     public string category { get; set; }
  
     public List<Card> cards { get; set; } = new List<Card>();
-// Visa för fransisco att parametern cards går ej att andvända i code delen here under, den blir noll.
-//    [Parameter]
-//    public List<Card> cards { get; set; } = new List<Card>();
-//    
-//    [Parameter]
-//    public List<String> strings { get; set; }
-//
     protected override async Task OnInitializedAsync()
     {
       var allCards = await GetApiInfo();
-       writeNumberOfCards();
        cards = GetCategoriesCards(category, allCards); // Ändra allcards till cards nar vi visar för francisco
-//       Console.WriteLine("This is the allCards inside CarouselCOMPONENT!!! OnInitialize:  " + filteredCards.Count); // commentera ut detta Fransisco
-    
-       Console.WriteLine("This is are the card recieved from  iNDEX## :  " + cards.Count);
-//       Console.WriteLine("This are the Strings recieved from  iNDEX## :  " + strings.Count); // och detta
-       Console.WriteLine("This is the CATEGORY recieved from  iNDEX## :  " + category);
     }
 //
     private int currentSlide = 1;
 
-    private void writeNumberOfCards()
-    {
-        Console.WriteLine("This is the number of cards in the carousel: " + cards.Count);
-    }
 
     private void PreviousSlide()
     {

@@ -19,11 +19,7 @@ namespace InvSystem.Shared.Services
 
         public static List<Card> GetCategoriesCards(string category, List<Card> allCards)
         {
-
-
             var cards = allCards.Where(c => c.Category == category).ToList();
-            Console.WriteLine("Inout of cards from CarousellComponent: " + allCards.Count);
-            Console.WriteLine("This is the list of cards inside GetCategoriesCards: " + cards.Count);
             return cards;
         }
     }
