@@ -1,7 +1,45 @@
+.HeroCont {
+  display: flex;
+  justify-content: center;
+}
+
 .hero-container {
-  height: 20vh;
-  background-color: rgb(43, 196, 125);
+  height: 25vh;
   padding: 20px;
-  border: 1px solid black;
   border-radius: 5px;
+  display: flex;
+  text-align: bottom;
+  justify-content: start;
+
+
+}
+
+.heroRow {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  width: 65vw;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 5px 5px black;
+  font-weight: bold;
+  margin: 0;
+  align-self: flex-end;
+}
+
+.logoCont {
+  display: flex;
+  justify-content: end;
+  padding: 0;
+
+}
+
+.heroLogo {
+  z-index: 1;
+  margin-right: 0;
+  opacity: 0.8;
 }
