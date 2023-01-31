@@ -37,7 +37,7 @@
     protected override async Task OnInitializedAsync()
     {
       var allCards = await GetApiInfo();
-       cards = GetCategoriesCards(category, allCards); // Ändra allcards till cards nar vi visar för francisco
+       cards = GetCardsByCategory(category, allCards);
     }
 //
     private int currentSlide = 1;

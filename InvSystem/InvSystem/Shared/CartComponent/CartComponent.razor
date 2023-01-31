@@ -3,23 +3,27 @@
 @using static Data.Cart;
 @using Newtonsoft.Json;
 
-
-
-<div>GetProducts()</div>
-
-
+<div>
+  <input type="text" placeholeder="Förbannad" @bind="textSearch" />
+@if(Cart.GetProducts().Count != 0 )
+{
+    @foreach(var shoppingCartItem in productsList)
+    {
+        <div>@shoppingCartItem.Title</div>
+    }
+}
+else
+{
+    <div>Det finns inga varor i kundvagnen</div>
+    <div>
+      <h3>@Cart.GetProducts().Count</h3>
+    </div>
+}
+</div>
 
 
 
 @code {
-
-
-    public Cart _cart = new Cart();
-
-
-    /* private void SaveCartToLocalStorage(Cart cart)
-    {
-        string json = JsonConvert.SerializeObject(cart);
-        SaveCartToLocalStorage.SetItem("Cart", json);
-    }*/
-}
+  private String textSearch{ get; set; }
+    private List<Card> productsList = Cart.GetProducts();
+  }

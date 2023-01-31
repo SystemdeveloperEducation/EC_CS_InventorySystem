@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@using static InvSystem.Data.Cart;
 
 <PageTitle>InvSystem</PageTitle>
 
@@ -9,11 +10,36 @@
 
     <main>
         <div class="top-row px-4">
-            <a href="#" target="_blank">About</a>
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-basket cartIcon" target="_blank" @onclick="@(() => {ShowCart();})">@Cart.GetProducts().Count</span>
+            </NavLink>
         </div>
-
+        @if(showCart) {
+                <div class="container-fluid justify-content-end cartContainer">
+                    <div class="row justify-content-end cartHolder">
+                        <div class="col-2 cart">
+                            @foreach (var shoppingCartItem in Cart.GetProducts())
+                            {
+                                <img src="@shoppingCartItem.Img_url" class="img-fluid" alt="Responsive image" />
+                                <div class="@showCart">@shoppingCartItem.Title</div>
+            
+                            }
+                        </div>
+                    </div>
+                </div>
+                }
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
+
+
+@code {
+    private bool showCart = false;
+
+    private void ShowCart()
+    {
+        showCart = !showCart;
+    }
+}

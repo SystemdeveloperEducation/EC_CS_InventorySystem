@@ -17,7 +17,7 @@ namespace InvSystem.Shared.Services
         }
 
 
-        public static List<Card> GetCategoriesCards(string category, List<Card> allCards)
+        public static List<Card> GetCardsByCategory(string category, List<Card> allCards)
         {
             var cards = allCards.Where(c => c.Category == category).ToList();
             return cards;

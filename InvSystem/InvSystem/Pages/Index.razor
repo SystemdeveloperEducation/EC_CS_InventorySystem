@@ -2,6 +2,7 @@
 @using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
 @inject ProtectedSessionStorage ProtectedSessionStore
 @inject ProtectedLocalStorage  BrowserStorage
+@using static InvSystem.Data.Cart;
 @page "/"
 
 
@@ -17,40 +18,15 @@ else
 {
     <div>Det finns inga varor i denna kategori</div>
 }
-@* <CartComponent></CartComponent> *@
 
 
 @code {
 
-    private List<Card> cards { get; set; } = new List<Card>(); 
-
+    private List<Card> cards { get; set; } 
+    private Cart shoppingCart = new Cart();
     protected override async Task OnInitializedAsync()
     {
         cards = await GetApiInfo();
     }
 
-// protected override async Task OnAfterRenderAsync(bool firstRender)
-// {
-
-//     // Store allCards in local storage
-//    await BrowserStorage.SetAsync("allCards", allCards[0]);
-//    await BrowserStorage.SetAsync("username", "Andres");
-// //   // get allCards from local storage
-//     Console.WriteLine("The number of cards from getallCards() is :" + allCards.Count);
-// //
-//   var readFromLocalStorage = await Read();
-//   Console.WriteLine("this is the readFromLocalStorage------------->"+ readFromLocalStorage.Title);
-// }
-
-// public async Task<Card> Read()
-//   {
-//     var result = await BrowserStorage.GetAsync<Card>("allCards");
-//     var myCard = result.Success ? result.Value : new Card();
-//     return myCard;
-//   }
-
-//   public async Task Delete()
-//   {
-//     await BrowserStorage.DeleteAsync("name");
-//   }
 }
