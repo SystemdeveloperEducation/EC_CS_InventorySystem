@@ -11,24 +11,38 @@
     <main>
         <div class="top-row px-4">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-basket cartIcon" target="_blank" @onclick="@(() => {ShowCart();})">@Cart.GetProducts().Count</span>
+                <div class="wrapper">
+                    <span class="oi oi-basket cartIcon" target="_blank" @onclick="@(() => {ShowCart();})"></span>
+                    <span class="cartCount">@Cart.GetProducts().Count()</span>
+                </div>
             </NavLink>
         </div>
-        @if(showCart) {
-                <div class="container-fluid justify-content-end cartContainer">
+     
+        <article class="content px-4">
+               @if(showCart) {
+                <div class="container justify-content-end cartContainer">
                     <div class="row justify-content-end cartHolder">
-                        <div class="col-2 cart">
+                        <div class="col-3 cart">
                             @foreach (var shoppingCartItem in Cart.GetProducts())
                             {
-                                <img src="@shoppingCartItem.Img_url" class="img-fluid" alt="Responsive image" />
-                                <div class="@showCart">@shoppingCartItem.Title</div>
-            
+                                
+                                <div class="@showCart showCart">
+                                    <div>
+                                        <img src="@shoppingCartItem.Img_url" class="img-fluid productImage" alt="Responsive image" />
+                                    </div>
+                                    <div>
+                                        <h4 class="cartHeading">@shoppingCartItem.Title</h4>
+                                        <p class="cartPrice">@shoppingCartItem.Price :-</p>
+                                        <p class="cartCountry">@shoppingCartItem.CountryOfOrigin</p>
+                                    </div>
+                                </div>
                             }
+                        <p>Totalsumma: </p>
+                        <button class="payBtn">Fortsätt till betalning</button>
                         </div>
                     </div>
                 </div>
                 }
-        <article class="content px-4">
             @Body
         </article>
     </main>
