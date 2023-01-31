@@ -2,13 +2,15 @@
 @using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
 @inject ProtectedSessionStorage ProtectedSessionStore
 @inject ProtectedLocalStorage  BrowserStorage
+@using static InvSystem.Data.Cart;
 @page "/"
 
 
 <HeroComponent />
 @if(cards is not null)
 {
-<CartComponent></CartComponent>
+<CartComponent ></CartComponent>
+
 <CarouselComponent category="Frukt" ></CarouselComponent>
 <CarouselComponent category="Grönsaker" ></CarouselComponent>
 <CarouselComponent category="Kött & Chark" ></CarouselComponent>
@@ -22,15 +24,20 @@ else
 
 @code {
 
-    private List<Card> cards { get; set; } = new List<Card>(); 
-
+    private List<Card> cards { get; set; } 
+private int ProductsInCart { get; set; } = 0;
+    private Cart shoppingCart = new Cart();
     protected override async Task OnInitializedAsync()
     {
         cards = await GetApiInfo();
     }
 
 
-    
+@* public void HandleCart() *@
+@* { *@
+@*  ProductsInCart = shoppingCart.GetProducts().Count;  *@
+@* } *@
+
 
 // protected override async Task OnAfterRenderAsync(bool firstRender)
 // {

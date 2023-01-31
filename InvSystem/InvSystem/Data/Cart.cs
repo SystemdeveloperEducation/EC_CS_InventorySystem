@@ -9,16 +9,17 @@ namespace InvSystem.Data
     public class Cart : Card
     {
 
-        private static List<Card> _products;
+        public static List<Card> _products;
 
         public Cart()
         {
             _products = new List<Card>();
         }
 
-        public void AddProductToCart(Card product)
+        public static void AddProductToCart(Card product)
         {
             _products.Add(product);
+            GetProducts();
             System.Console.WriteLine("This is the AddProductToCart: " + _products.Count);
         }
 
@@ -28,9 +29,9 @@ namespace InvSystem.Data
             _products.Remove(product);
         }
 
-        public List<Card> GetProducts()
+        public static List<Card> GetProducts()
         {
-            System.Console.WriteLine("This si the GetProducts" + _products.Count);
+            System.Console.WriteLine("This IS the GetProducts:  " + _products);
             return _products;
         }
 
