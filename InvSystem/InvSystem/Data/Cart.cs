@@ -19,8 +19,6 @@ namespace InvSystem.Data
         public static void AddProductToCart(Card product)
         {
             _products.Add(product);
-            GetProducts();
-            System.Console.WriteLine("This is the AddProductToCart: " + _products.Count);
         }
 
 
@@ -31,7 +29,6 @@ namespace InvSystem.Data
 
         public static List<Card> GetProducts()
         {
-            System.Console.WriteLine("This IS the GetProducts:  " + _products);
             return _products;
         }
 
