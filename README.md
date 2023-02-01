@@ -36,6 +36,11 @@ Run the Frontend
    dotnet run  --project InvSystem/InvSystem/
 ```
 
+Or make it simple and run the start.sh script
+to restore build and run the server and the application in one go
+```bash
+   sh start.sh
+```
 
 ## Authors
 
