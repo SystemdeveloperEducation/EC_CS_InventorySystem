@@ -3,7 +3,7 @@
 
 Detta är en Blazor applikation som visar diverse livsmedel på liknande sätt som Coop eller Ica.
 
-
+[Rapport kan hittas via denna länk till ClickUp](https://share-docs.clickup.com/4543470/d/h/4amze-1325/82885b8b5f40ccb)
 
 
 ## Run Locally
