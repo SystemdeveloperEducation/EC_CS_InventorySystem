@@ -20,8 +20,7 @@ Go to the project directory
   cd EC_CS_InventorySystem/
 ```
 
-Install dependencies
-
+Restore the projects
 ```bash
   dotnet restore
 ```
