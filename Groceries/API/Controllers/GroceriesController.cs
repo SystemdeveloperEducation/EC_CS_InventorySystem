@@ -16,7 +16,7 @@ namespace API.Controllers
         [HttpGet] //api/groceries
         public async Task<ActionResult<List<Groceries>>> GetGroceries()
         {
-            // System.Console.WriteLine("lol");.
+            Console.WriteLine("lol");
             return await _context.Groceries.ToListAsync();
         }
 
