@@ -2,13 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": ".NET Core Launch (web)",
+      "name": "API",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/InvSystem/InvSystem/bin/Debug/net7.0/InvSystem.dll",
+      "program": "${workspaceFolder}/Groceries/API/bin/Debug/net7.0/API.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/InvSystem/InvSystem",
+      "cwd": "${workspaceFolder}/Groceries/API",
       "stopAtEntry": false,
       "serverReadyAction": {
         "action": "openExternally",
@@ -22,13 +22,13 @@
       }
     },
     {
-      "name": ".NET Core Launch API",
+      "name": "WEB",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/Groceries/API/bin/Debug/net7.0/API.dll",
+      "program": "${workspaceFolder}/InvSystem/InvSystem/bin/Debug/net7.0/InvSystem.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/Groceries/API",
+      "cwd": "${workspaceFolder}/InvSystem/InvSystem",
       "stopAtEntry": false,
       "serverReadyAction": {
         "action": "openExternally",
@@ -49,10 +49,10 @@
   ],
   "compounds": [
     {
-      "name": "Debug web and API Dev Mode",
+      "name": "Debug web and API",
       "configurations": [
-        ".NET Core Launch (web)",
-        ".NET Core Launch API"
+        "API",
+        "WEB"
       ]
     }
   ]

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/InvSystem/InvSystem/InvSystem.csproj",
+                "${workspaceFolder}/Groceries/API/API.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/InvSystem/InvSystem/InvSystem.csproj",
+                "${workspaceFolder}/Groceries/API/API.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/InvSystem/InvSystem/InvSystem.csproj"
+                "${workspaceFolder}/Groceries/API/API.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
