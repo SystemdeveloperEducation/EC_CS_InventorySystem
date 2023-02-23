@@ -13,7 +13,7 @@ namespace API.Controllers
             _context = context;
         }
 
-        [HttpGet] //api/groceries
+        [HttpGet] //api/groceries.
         public async Task<ActionResult<List<Groceries>>> GetGroceries()
         {
             int a = 3;
